@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <title>Login Épico</title>
-</head>
+<?php
+    $title_name = "Iniciar Sesión";
+    include "includes/head_settings.php"
+
+?>
 <body>
     <div class="container">
         <div class="row">
@@ -21,6 +15,13 @@
                 <div class="card border-dark mb-3">
                     <div class="card-body">
                         <form action="ValidarLogin.php" method="post">
+                            <?php
+                                    if (isset($error_message)){
+                                        echo '<div id="error_message" class="col-12 alert alert-danger">';
+                                        echo '<p>'. $error_message .'</p>';
+                                        echo '</div>';
+                                    }
+                                ?>
                             <div class="form-group mt-3">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" name="email" id="email" placeholder="Introduce tu email" autocomplete="off" required>
