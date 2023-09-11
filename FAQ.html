@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/sources/css/bootstrap.min.css">
     <script src="sources/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 </head>
@@ -34,17 +34,22 @@
                 </div>
             </div>
             <div class="col-4">
-                <form action="" method="post">
-                    <div class="mb-2">
-                        <label for="exampleFormControlInput1" class="form-label">Direccion de email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                      </div>
-                      <div class="mb-2">
-                        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-
-                </form>
+                <div class="card">
+                    <div class="card-header">Consultas</div>
+                    <div class="card-body">
+                        <p class="card-text"> ¿Tines alguna consulta? escribenos y la responderemos lo mas pronto posibles</p>
+                        <form action="" method="post">
+                            <div class="mb-1">
+                                <label for="exampleFormControlInput1" class="form-label">Direccion de email</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                              </div>
+                              <div class="mb-1">
+                                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
