@@ -6,10 +6,11 @@ include 'includes/db_con.php';
 $Nombre = $_POST['Nombre'];
 $Email = $_POST['Email'];
 $Consulta = $_POST['Consulta'];
+$fechaActual = date('Y-m-d H:i:s');
 
-$Consulta= mysql_query("INSERT INTO "); 
+$Consulta= mysqli_query($link, "INSERT INTO `consulta`( `fecha`, `contenido`, `Autor`, `Email`) VALUES ('$fechaActual','$Consulta','$Nombre','$Email')"); 
 
-
+header("location: FAQ.html");
 
 
 ?>
