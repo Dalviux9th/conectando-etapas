@@ -8,11 +8,3 @@
     <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
     <title><?php echo $title_name; ?></title>
 </head>
-
-<body><div class="container-fluid">
-
-    <header class="row py-2">
-
-    </header>
-
-    <main class="row justify-content-center py-5 px-2 px-sm-5">
