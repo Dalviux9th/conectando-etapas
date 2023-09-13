@@ -34,22 +34,30 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card">
-                    <div class="card-header">Consultas</div>
-                    <div class="card-body">
-                        <p class="card-text"> ¿Tines alguna consulta? escribenos y la responderemos lo mas pronto posibles</p>
-                        <form action="" method="post">
-                            <div class="mb-1">
-                                <label for="exampleFormControlInput1" class="form-label">Direccion de email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                              </div>
-                              <div class="mb-1">
-                                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                              </div>
-                        </form>
+                <form action="enviar_consulta.php" method="post">
+                    <div class="mb-2">
+                        <div class="card">
+                            <div class="card-header">¿tiene alguna consulta? escribenos y te responderomos lo mas pronto posible</div>
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name ="Nombre"required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleFormControlInput2" class="form-label">Direccion de email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" name="Email" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Consulta" required></textarea>
+                                </div>
+                                <div class="mb-2">
+                                    <button type="submit" class="btn btn-primary" name="Envio">Submit</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
