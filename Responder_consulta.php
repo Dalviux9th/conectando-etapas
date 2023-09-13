@@ -3,8 +3,6 @@ if(!isset($_POST["Enviar"])){
     header("Responder_consulta.php");
 }
 
-
-
 include 'includes/db_con.php';
 $ID = $_GET["id"];
 $resConsulta = $_POST["resConsulta"];
@@ -46,5 +44,7 @@ try{
 catch(Exception $e){
     echo 'Mensaje' . $email->ErrorInfo;   
 }
+
+mysqli_query($link, "DELETE FROM `consulta` WHERE id_cons = '$ID'");
 header("Responder_consulta.php");
 ?>
