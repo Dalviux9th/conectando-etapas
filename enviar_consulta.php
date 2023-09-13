@@ -9,7 +9,7 @@ $Email = $_POST['Email'];
 $Consulta = $_POST['Consulta'];
 $fechaActual = date('Y-m-d H:i:s');
 
-$Consulta= mysqli_query($link, "INSERT INTO `consulta`( `fecha`, `contenido`, `Autor`, `Email`) VALUES ('$fechaActual','$Consulta','$Nombre','$Email')"); 
+$Consulta= mysqli_query($link, "INSERT INTO `consulta`( `fecha`, `contenido`, `Nombre`, `Email`) VALUES ('$fechaActual','$Consulta','$Nombre','$Email')"); 
 
 header("location: FAQ.php");
 die();

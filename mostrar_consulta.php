@@ -9,13 +9,15 @@
 <body>
     <div class="container mt-4">
         <div class="row">
+            
         <?php
             include 'includes/db_con.php';
             $resultado = mysqli_query($link,"SELECT * FROM `consulta`");
             
             while ($Datos = mysqli_fetch_array($resultado)) {
 
-                echo '<div class="card mt-4">
+                echo ' <div class="col-6">
+                <div class="card mt-4">
                     <div class="card-header text-center">'.$Datos[3]. ' </div>
                     <div class="card-body"><div class="card-text">'.$Datos[2].'</div>
                 </div>
@@ -30,6 +32,7 @@
                     </div>
                       <button type="submit" class="btn btn-primary mb-3" name="Enviar" >Responder</button>
                 </form>
+                </div>
                 </div>
                 '; 
             }
