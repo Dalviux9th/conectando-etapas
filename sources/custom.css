@@ -1,0 +1,59 @@
+body {
+    font-family: Cantarell;
+    overflow-x: hidden;
+}
+
+#menu a {
+    font-size: x-large;
+    font-weight: 300;
+    color: #1B036D;
+}
+
+p {
+    color: #1B036D;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #1B036D;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+}
+
+.carousel-inner {
+    max-height: 45rem;
+}
+
+hr {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+@media (max-widht: 768px) {
+    #intro {
+        width: 90 !important;
+    }
+    .preview {
+        width: 100%;
+        text-align: center !important;
+    }
+    footer p {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #336efa;
+}
+
+#iconos i {
+    font-size: 3rem;
+    color: #1B036D;
+    padding: 0px 8px;
+}
