@@ -3,7 +3,7 @@
     include "includes/head_settings.php"
 
 ?>
-<body>
+<body style="color: #1B036D;">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -17,13 +17,12 @@
                         <form action="ValidarLogin.php" method="post">
                             
                             <?php
-                                    if(isset($_GET['error'])) {
-                                        $errorMessage = $_GET['error'];
-                                        echo '<div class="col-12 alert alert-danger text-center">';
-                                        echo   '<p class="fs-4">'. $errorMessage .'</p>';
-                                        echo '</div>';
-                                    }
-                                ?>
+                                    if(isset($_GET['error']))
+                                     echo '<div class="alert alert-danger text-center">
+                                            <strong>¡Datos incorrectos!</strong> Compruebe los datos de sesión e inténtelo denuevo.
+                                            </div>';
+                                     
+                                    ?>
                             <div class="form-group mt-3">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" name="email" id="email" placeholder="Introduce tu email" autocomplete="off" required>
@@ -37,7 +36,7 @@
                                 </div>  
                               </div>
                               <div class="form-group">
-                                <button type="submit" class="btn btn-outline-success mt-4 text-info form-control" name="btnlogin">Iniciar sesión</button>
+                                <button type="submit" class="btn btn-primary btn-primary-outline-success mt-4 text-light form-control" name="btnlogin">Iniciar sesión</button>
                               </div>
                         </form>
                     </div>

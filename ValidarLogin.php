@@ -20,11 +20,7 @@ if (isset($_POST['btnlogin'])){
     */
 
 
-
-
-
-    if ($rows == 1){
-        $hash = mysqli_fetch_assoc($consul);
+/* $hash = mysqli_fetch_assoc($consul);
             if(password_verify($pass, $hash['clave'])){
                 
                 session_start();
@@ -40,6 +36,19 @@ if (isset($_POST['btnlogin'])){
         exit();
     }
 
- 
+ */
+
+
+    if ($rows == 1){
+        session_start();
+        $_SESSION["user"] = $username;
+        header('Location: Index.php');
+        exit();
+} else {
+    // Mostrar mensaje de error
+    $error = 'Datos inválidos. Intente de nuevo.';
+    header('Location: login.php?error='. urlencode($error));
+    exit();
+  }
 }
  ?>
