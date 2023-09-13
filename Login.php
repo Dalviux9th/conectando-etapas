@@ -15,10 +15,12 @@
                 <div class="card border-dark mb-3">
                     <div class="card-body">
                         <form action="ValidarLogin.php" method="post">
+                            
                             <?php
-                                    if (isset($error_message)){
-                                        echo '<div id="error_message" class="col-12 alert alert-danger">';
-                                        echo '<p>'. $error_message .'</p>';
+                                    if(isset($_GET['error'])) {
+                                        $errorMessage = $_GET['error'];
+                                        echo '<div class="col-12 alert alert-danger text-center">';
+                                        echo   '<p class="fs-4">'. $errorMessage .'</p>';
                                         echo '</div>';
                                     }
                                 ?>
