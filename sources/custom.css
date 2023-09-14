@@ -1,0 +1,5 @@
+.redCard {
+    min-height: 70px;
+    border: red solid 1px;
+    border-radius: 10px;
+}
