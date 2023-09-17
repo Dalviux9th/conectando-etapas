@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sources/css/bootstrap.min.css">
-    <script src="sources/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="containe-fluid">
+<?php
+
+$title_name = "Preguntas Frecuentes - EESTN°2";
+include "includes/head_settings.php";
+?>
+    <div class="container-fluid">
         <div class="row m-5">
             <div class="col-8">
                 <div class="card">
@@ -61,5 +56,7 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+
+<?php
+include "includes/footer.php";
+?>
