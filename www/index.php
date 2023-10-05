@@ -1,33 +1,70 @@
 <?php
 $title_name = 'Principal - EEST N°2 "Ing. Felipe Senillosa"'; // -- TITULO DE LA PAGINA EN EL NAVEGADOR
-include "includes/head_settings.php";
 ?>
 
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cantarell" />
+    
+    <!--link rel="stylesheet" href="http://localhost/sources/css/bootstrap.min.css"-->
+    <link rel="stylesheet" href="http://localhost/www/sources/custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+    <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
+    <title><?php echo $title_name; ?></title>
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <header class="header">
+        <img class="bg-image" src="../www/sources/images/EESTN2.jpg" alt="">
+        <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span>EEST Nº2</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse justify-content-end"" id="extendNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Historia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Más
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Anécdotas</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">Documentos</a></li>
+                                <li><a class="dropdown-item" href="#">Contactos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
 
         <!--Carousel de imagenes-->
 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://3.bp.blogspot.com/-Jig2u0pBUPU/T8UQ7VuqdyI/AAAAAAAAAIY/IAkgeZoA2-0/s1600/EEST2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://3.bp.blogspot.com/-Jig2u0pBUPU/T8UQ7VuqdyI/AAAAAAAAAIY/IAkgeZoA2-0/s1600/EEST2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://3.bp.blogspot.com/-Jig2u0pBUPU/T8UQ7VuqdyI/AAAAAAAAAIY/IAkgeZoA2-0/s1600/EEST2.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-        </div>
+       
 
 
 
@@ -121,6 +158,36 @@ include "includes/head_settings.php";
 
     </main>
 
-<?php
-include "includes/footer.php";
-?>
+    <footer class="w-100 d-flex align-items justify-content-center">
+            <p class="fs-5 px-3 pt-3">
+                EEST N°2 Ing. "Felipe Senillosa"
+            </p>
+            <div class="" id="iconos">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+            </div>
+        </footer>
+
+          
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--script src="http://localhost/sources/js/bootstrap.bundle.js"></script-->
+    
+    <script>
+        const newElement = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 80){
+        newElement.classList.add('nav-scrolled');
+    }else if (window.scrollY <= 80){
+        newElement.classList.remove('nav-scrolled');
+    }
+})
+    </script>
+</body>
+
+</html>

@@ -3,11 +3,33 @@ body {
     overflow-x: hidden;
 }
 
-#menu a {
-    font-size: x-large;
-    font-weight: 300;
-    color: #1B036D;
+#menu a, span {
+    font-size: large;
+    font-weight: bold 300;
+    color: #fff;
+    height: 2.5rem;
+    
 }
+
+.navbar{
+    transition: all 0.7s;
+}
+
+.bg-image{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.nav-scrolled{
+    background-color: #0080FE;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
 
 p {
     color: #1B036D;
@@ -21,13 +43,11 @@ h5 {
     color: #1B036D;
 }
 
-.header .navbar {
-    background-color: transparent !important;
-}
 
 .carousel-inner {
     max-height: 45rem;
 }
+
 
 hr {
     max-width: 80%;
@@ -48,12 +68,17 @@ hr {
     }
 }
 
-footer {
-    background-color: #336efa;
+footer p {
+    color: white;
 }
 
-#iconos i {
-    font-size: 3rem;
+footer{
+    font-size: 1rem;
+    background-color: #0F52BA;
+
+}
+
+#iconos a{
+    font-size: 2rem;
     color: #1B036D;
-    padding: 0px 8px;
 }
