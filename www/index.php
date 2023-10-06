@@ -33,7 +33,7 @@ $title_name = 'Principal - EEST N°2 "Ing. Felipe Senillosa"'; // -- TITULO DE L
             <span class="navbar-toggler-icon"></span>
           </button>
                 <div class="collapse navbar-collapse justify-content-end"" id="extendNav">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="">Inicio</a>
                         </li>
