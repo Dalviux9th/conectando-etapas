@@ -1,0 +1,22 @@
+@import "subir-imagenes.css";
+
+:root {
+    --gris: rgb(140, 142, 196);
+}
+
+header {
+    min-height: 70px;
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & .botonera {
+        width: fit-content;
+
+        & .btn {
+            margin: 0 10px;
+        }
+    }
+}

@@ -1,9 +1,0 @@
-:root {
-    --gris: rgb(140, 142, 196);
-}
-
-.redCard {
-    min-height: 70px;
-    border: red solid 1px;
-    border-radius: 10px;
-}
