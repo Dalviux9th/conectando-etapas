@@ -1,6 +1,7 @@
     </main>
     
     <footer class="row">
+    <a href="https://www.flaticon.es/iconos-gratis/resultados" title="resultados iconos">Resultados iconos creados por phatplus - Flaticon</a>
 
     </footer>
 
@@ -10,4 +11,5 @@
 <!-- <script src="http://localhost/sources/js/bootstrap.bundle.js"></script> -->
 <script src="http://localhost/admin/sources/script/script.js"></script>
 <!-- <script src="http://localhost/www/sources/jquery.js"></script> -->
+
 </html>

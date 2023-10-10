@@ -50,7 +50,7 @@ for ($i = 0; $i < $lines; $i++) {
                 $time = date_create("now", timezone_open('America/Argentina/Buenos_Aires'));
                 
                 $location = "uploads/PRE-";
-                $location .= date_format($time, 'YmdHisu');
+                $location .= date_format($time, 'YmdHisu');//FOMATO: '[PRE-yyyymmddhhiissuuuuuu]' Año, mes, dia (Nro), hora en formato 24, minutos, segundos, milisegundos en formato de 6 decimales
                 $location .= "." . pathinfo($_FILES['fotos']['name'][$i], PATHINFO_EXTENSION);
 
                 try {
@@ -61,7 +61,7 @@ for ($i = 0; $i < $lines; $i++) {
                     $response[$i]->original_name = $_FILES['fotos']['name'][$i];
                 } catch (\Throwable $th) {
                     $response[$i]->status_code = 417; //  -- 417 = expectation failed
-                    $response[$i]->status_text = "Hubo un error inesperado:<br>417. <b>Expectation failed</b>:  - $th<br>Reintente la carga.";
+                    $response[$i]->status_text = "Hubo un error inesperado al guardar el archivo:<br>417. <b>Expectation failed</b>:  - $th<br>Reintente la carga.";
                     $response[$i]->original_name = $_FILES['fotos']['name'][$i];
                 }
             }

@@ -21,31 +21,47 @@ form.fotos.addEventListener(
 
     const request = new XMLHttpRequest();
 
-    request.onload = (progress) => {
+    request.onload = (progress) => {// Función al regresar del request.
         console.log(`REQUEST: ${request.status} - ${request.statusText}.`);//${response.status_code}: ${response.status_text}
         console.log(request);
         let response = JSON.parse(request.response);
         console.log(response);
 
-        switch (request.status) {
+        switch (request.status) {// Mensajes de status
             case 200:
-                stateDisplay.innerHTML = `<div class="alert alert-success">Todos los archivos han sido cargados satisfactoriamente.</div>`;
+                stateDisplay.innerHTML = `
+                    <div class="alert alert-success alert-dismissible fade show">
+                        Todos los archivos han sido cargados satisfactoriamente.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
                 break;
 
             case 207:
-                stateDisplay.innerHTML = `<div class="alert alert-warning">Solo ALGUNOS de los archivos han sido cargados. En <b>color rojo</b> se marcan los archivos en conflicto.</div>`;
+                stateDisplay.innerHTML = `
+                    <div class="alert alert-warning alert-dismissible fade show">
+                        Solo ALGUNOS de los archivos han sido cargados. En <b>color rojo</b> se marcan los archivos en conflicto.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
                 break;
 
             case 417:
-                stateDisplay.innerHTML = `<div class="alert alert-danger">No pudieron cargarse los archivos. Por favor reintente la carga.</div>`;
+                stateDisplay.innerHTML = `
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        No pudieron cargarse los archivos. Por favor reintente la carga.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
                 break;
-                
+
             default:
-                stateDisplay.innerHTML = `<div class="alert alert-danger">Ha ocurrido un <b>error desconocido</b>:<br>${request.status} - ${request.statusText}</div>`;
+                stateDisplay.innerHTML = `
+                    <div class="alert alert-danger alert-dismissible fade show">
+                        Ha ocurrido un <b>error desconocido</b>:<br>${request.status} - ${request.statusText}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
                 break;
         }
 
-        response.forEach(element => {
+        response.forEach(element => {// Imprime los que están bien.
             if (element.status_code > 400){
 
                 display.innerHTML +=
@@ -68,14 +84,14 @@ form.fotos.addEventListener(
                     </div>
                     <div class="row imgCardContent card-body">
 
-                        <div class="col-12 col-md-7 col-lg-6">
-                            <img src="${element.location}" alt="404. Imagen no encontrada." width="100%">
+                        <div class="imgContainer col-12 col-lg-5 p-0 bg-secondary border border-dark rounded-2">
+                            <img src="${element.location}" alt="404. Imagen no encontrada.">
                         </div>
 
-                        <div class="col-12 col-md-5 col-lg-6">
+                        <div class="col-12 col-lg-7">
                         <form>
+                            <input type="hidden" name="direccion" value="${element.location}">
                             <p class="form-title mt-5">Inserte los datos alusivos a la imagen</p>
-                            <input type="hidden" name="imagen" value="${element.location}">
 
                             <div class="mb-3">
                                 <label for="fecha" class="form-label">fecha</label>
@@ -99,7 +115,7 @@ form.fotos.addEventListener(
     
     request.open("POST", "system/precarga-imagen.php", true);
     request.send(formData);
-    event.preventDefault();
+    event.preventDefault();//Evita la recarga de la página.
 },
 false,
 );
