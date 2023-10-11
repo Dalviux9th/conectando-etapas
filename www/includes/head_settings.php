@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
+<html lang="en" data-bs-theme="<?php echo isset($dark_mode) ? 'dark' : 'light'; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
