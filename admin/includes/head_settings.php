@@ -15,7 +15,7 @@
     <header class="row">
         <img class="col-auto" src="http://localhost/www/sources/images/logo_trans.png" alt="404" height="60px">
         <div class="botonera">
-            <div class="btn btn-light">Principal</div>
-            <div class="btn btn-light">Lorem</div>
+            <a class="btn btn-light" href="./">Principal</a>
+            <a class="btn btn-light" href="./subir-imagen.php">Carga de datos</a>
         </div>
     </header>

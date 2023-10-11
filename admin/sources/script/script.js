@@ -3,6 +3,15 @@ const display = document.querySelector("#Display");
 const stateDisplay = document.querySelector("#StateDisplay");
 const btnUpload = document.querySelector("#btnUpload");
 
+
+document.querySelectorAll('.close-icon')
+.forEach(element => {
+    element.addEventListener('click', (event) => {
+    console.log(event);
+    element.closest('.card').fadeOut();
+  })
+});
+
 // Movimiento del boton de subida
 btnUpload.addEventListener("mouseover", (event) => {
     btnUpload.classList.add("fa-beat");
@@ -84,14 +93,14 @@ form.fotos.addEventListener(
                     </div>
                     <div class="row imgCardContent card-body">
 
-                        <div class="imgContainer col-12 col-lg-5 p-0 bg-secondary border border-dark rounded-2">
+                        <div class="imgContainer col-12 col-md-5 p-0 bg-secondary border border-dark rounded-2">
                             <img src="${element.location}" alt="404. Imagen no encontrada.">
                         </div>
 
-                        <div class="col-12 col-lg-7">
+                        <div class="col-12 col-md-7">
                         <form>
                             <input type="hidden" name="direccion" value="${element.location}">
-                            <p class="form-title mt-5">Inserte los datos alusivos a la imagen</p>
+                            <h5 class="form-title mt-5 mt-md-0">Inserte los datos alusivos a la imágen</h5>
 
                             <div class="mb-3">
                                 <label for="fecha" class="form-label">fecha</label>
@@ -102,7 +111,8 @@ form.fotos.addEventListener(
                                 <label for="descripcion" class="form-label">Descripción(opcional)</label>
                                 <input type="descripcion" class="form-control" id="descripcion" name="decripcion">
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                            <button type="submit" class="btn btn-primary">Subir</button>
                         </form>
                         </div>
                     </div>

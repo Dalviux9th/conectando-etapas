@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
+
+
     include "includes/head_settings.php";    
 ?>
-<div id="imagenes"></div>
-</html>
+<main>
+
+    <div id="imagenes"></div>
+</main>
+
+<?php
+
+include "includes/footer.php"
+?>
 <script src="system/ajax.js"></script>

@@ -16,7 +16,7 @@
     <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content border-0">
-                <img class="w-100 rounded-2" src="http://localhost/admin/uploads/PRE-20231005151806632918.jpg" alt="" srcset="">
+                <img class="w-100 rounded-2" src="" alt="" srcset="">
                 <button type="button" class="position-absolute top-0 end-0 btn btn-light rounded-5 m-1" data-bs-dismiss="modal">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
@@ -51,7 +51,7 @@
                 <img class="col-6 col-sm-4 h-100" src="./sources/images/no-results_Placeholder.png" alt="404. No encontrado">
                 <div class="col-12 text-center">
                     <h3>Aún no cargaste nada.</h3>
-                    <p>Para subir imágenes nuevas, primero deben ser 'pre-cargadas'.<br> Empiece por subirlas con el botón <i class="fa-solid fa-cloud-arrow-up"></i></p>
+                    <p>Para publicar imágenes nuevas, primero deben ser 'pre-cargadas'.<br> Empiece por subirlas con el botón <i class="fa-solid fa-cloud-arrow-up"></i></p>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
         <!--footer-->
 
-        <footer class="row w-100 d-flex align-items justify-content-center">
+        <footer class="w-100 d-flex align-items justify-content-center">
             <p class="fs-5 px-3 pt-3">
                 EEST N°2 Ing. "Felipe Senillosa"
             </p>

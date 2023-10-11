@@ -20,16 +20,16 @@
 
     <!--Navbar-->
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top nav-scrolled" id="menu">
+        <nav class="navbar navbar-expand-lg p-4" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><span>EEST N°2</span></a>
+                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-                <div class="collapse navbar-collapse justify-content-end"" id="extendNav">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse justify-content-end me-5" id="extendNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./">Inicio</a>
                         </li>
                         </li>
                         <li class="nav-item">
@@ -43,10 +43,9 @@
                             Más
                         </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Anécdotas</a></li>
-                                <li><a class="dropdown-item" href="#">FAQ</a></li>
-                                <li><a class="dropdown-item" href="#">Documentos</a></li>
-                                <li><a class="dropdown-item" href="#">Contactos</a></li>
+                                <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./galeryFront.php">Galería</a></li>
+                                <li><a class="dropdown-item" href="./galeria.php">Archivo digital</a></li>
                             </ul>
                         </li>
                     </ul>

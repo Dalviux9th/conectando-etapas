@@ -1,7 +1,3 @@
-<?php
-$title_name = 'Principal - EEST N°2 "Ing. Felipe Senillosa"'; // -- TITULO DE LA PAGINA EN EL NAVEGADOR
-?>
-
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
 <head>
@@ -16,7 +12,7 @@ $title_name = 'Principal - EEST N°2 "Ing. Felipe Senillosa"'; // -- TITULO DE L
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
-    <title><?php echo $title_name; ?></title>
+    <title>Principal - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
@@ -28,11 +24,11 @@ $title_name = 'Principal - EEST N°2 "Ing. Felipe Senillosa"'; // -- TITULO DE L
         <img class="bg-image" src="../www/sources/images/EESTN2.jpg" alt="">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-                <div class="collapse navbar-collapse justify-content-end"" id="extendNav">
+                <div class="collapse navbar-collapse justify-content-end" id="extendNav">
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="">Inicio</a>
@@ -49,10 +45,14 @@ $title_name = 'Principal - EEST N°2 "Ing. Felipe Senillosa"'; // -- TITULO DE L
                             Más
                         </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Anécdotas</a></li>
+                                <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./galeryFront.php">Galería</a></li>
+                                <li><a class="dropdown-item" href="./galeria.php">Archivo digital</a></li>
+                                
+                            <!--li><a class="dropdown-item" href="#">Anécdotas</a></li>
                                 <li><a class="dropdown-item" href="#">FAQ</a></li>
                                 <li><a class="dropdown-item" href="#">Documentos</a></li>
-                                <li><a class="dropdown-item" href="#">Contactos</a></li>
+                                <li><a class="dropdown-item" href="#">Contactos</a></li-->
                             </ul>
                         </li>
                     </ul>
