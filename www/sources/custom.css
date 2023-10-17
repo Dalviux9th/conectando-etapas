@@ -1,17 +1,13 @@
-@import "./anecdotas.css";
-
 body {
     font-family: Cantarell;
     overflow-x: hidden;
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 70px auto 70px;
+    grid-template-rows: auto auto 70px;
 }
 
-header {
-  z-index: 5000;
-}
+
 
 
 #carruselGalery{
@@ -135,7 +131,7 @@ div.item {
 
 .bg-image{
     width: 100vw;
-    height: 50vh;
+    max-height: 50vh;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -150,7 +146,7 @@ div.item {
 
 
 p {
-    color: #1B036D;
+    color: #1B036D !important;
 }
 
 h1,
@@ -158,7 +154,7 @@ h2,
 h3,
 h4,
 h5 {
-    color: #1B036D;
+    color: #1B036D !important	;
 }
 
 
@@ -187,7 +183,7 @@ hr {
 }
 
 footer p {
-    color: white;
+    color: white !important;
 }
 
 footer{
@@ -198,5 +194,5 @@ footer{
 
 #iconos a{
     font-size: 2rem;
-    color: #1B036D;
+    color: #FFF !important;
 }

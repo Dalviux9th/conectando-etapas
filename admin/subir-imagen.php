@@ -38,7 +38,7 @@
             </h3>
             <span class="col-3 col-sm-auto">
                 <label for="fotos" id="btnUpload" class="btn position-absolute bottom-0 end-0">
-                    <i class="fs-2 text-primary fa-solid fa-cloud-arrow-up"></i>
+                    X<i class="fs-2 text-primary fa-solid fa-cloud-arrow-up"></i>
                 </label>
             </span>
             <hr class="mt-1 mb-0">

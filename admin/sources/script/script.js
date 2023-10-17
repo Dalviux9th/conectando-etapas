@@ -4,6 +4,13 @@ const stateDisplay = document.querySelector("#StateDisplay");
 const btnUpload = document.querySelector("#btnUpload");
 
 
+document.addEventListener("click", (event) =>{
+    if(event.target.classList.contains("subImg")){
+        event.preventDefault();
+        document.getElementById("Display").removeChild(document.getElementById(`${event.target.id}-card`));   
+    }   
+})
+
 document.querySelectorAll('.close-icon')
 .forEach(element => {
     element.addEventListener('click', (event) => {
