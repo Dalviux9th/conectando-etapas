@@ -1,4 +1,5 @@
-let id = 0
+let id = 0;
+let sql = "1 ";
 window.addEventListener("load" , () =>{
   id = 0
   buscraImg()
@@ -8,8 +9,14 @@ window.addEventListener("scroll", () => {
     let scrolled = document.documentElement.scrollHeight-window.innerHeight;
     let scroll = window.scrollY;
     if(Math.ceil(scroll) >= scrolled){
-      buscraImg()
+      buscraImg();
       };
+   })
+
+   document.getElementById("btn-busqueda").addEventListener("click", ()=>{
+    document.getElementById("imagenes").innerHTML = "";
+    let busqueda = document.getElementById("inp-busqueda").value;
+      sql = `AND %${busqueda}% `;
    })
 
 
@@ -17,6 +24,7 @@ function buscraImg() {
     let data = new FormData
     data.append('pass', '1234');
     data.append('id', id);
+    data.append('sql', sql);
     fetch('http://localhost/www/system/bajarFotos.php',{
       method: "POST",
       body: data

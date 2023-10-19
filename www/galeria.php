@@ -6,6 +6,8 @@
 <main>
 
     <div id="imagenes"></div>
+    <input type="text" id="inp-busqueda">
+    <button id="btn-busqueda">buscar</button>
 </main>
 
 <?php
