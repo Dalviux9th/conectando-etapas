@@ -31,28 +31,18 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="extendNav">
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Biblioteca</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Historia</a>
-                        </li> -->
-                                <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
-                                <li class="nav-item" ><a class="nav-link active" href="./">Historia</a></li>
-                                <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Básico</a></li>
-                                <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Superior</a></li>
-                        
-
-                        <li class="nav-item dropdown">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php">Inicio</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./">Historia</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Superior</a></li>
+                        <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Más
-                        </a>
+                                Más información
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./FAQ.php">Documentos</a></li>
-                                <li><a class="dropdown-item" href="./galeryFront.php">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
+                                <li><a class="dropdown-item" href="./faqFront.php">FAQ</a></li>
                                 <li><a class="dropdown-item" href="./galeria.php">Archivo digital</a></li>
                             </ul>
                         </li>
@@ -60,9 +50,6 @@
                 </div>
             </div>
         </nav>
-
-        
-        
     </header>
     <main>
 
