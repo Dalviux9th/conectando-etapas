@@ -20,6 +20,22 @@ body {
     color: #000 !important;
 }
 
+p {
+    color: #1B036D !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #1B036D !important	;
+}
+
+#insc{
+    background-color: rgb(201, 201, 201);
+    border-radius: 5px;
+}
 
 
 header, nav{

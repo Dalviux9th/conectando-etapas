@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
-    <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
+    
     <title>Documentos - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
@@ -33,8 +33,8 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php">Inicio</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./">Historia</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Básico</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Superior</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./basicoFront.php">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./superiorFront.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Más información
@@ -51,8 +51,27 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="container mt-5 text-center justify-content-center">
+        <div class="row fs-4">
+            <div class="col-12 col-md-4 offset-md-1" id="insc">
+                <p>¿Querés inscribirte? ¡Descargá e imprimí este documento y llenalo!</p>
+            </div>
+            <div class="col-12 col-md-4 offset-md-1 mt-3">
+                <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="downloadInsc" name="downloadInsc"><i class="fa-solid fa-download fa-bounce" style="color: #005eff;"></i> Descargar Inscripción.</a>
+            </div>
+        </div>
+        <div class="row fs-4 mt-2">
+            <div class="col-12 col-md-4 offset-md-1" id="insc">
+                <p>¿Querés rematricularte? ¡Descargá e imprimí este documento y llenalo!</p>
+            </div>
+            <div class="col-12 col-md-4 offset-md-1 mt-3">
+            <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="downloadMatr" name="downloadMatr"><i class="fa-solid fa-download fa-bounce" style="color: #005eff;"></i> Descargar Matrícula.</a>
+            </div>
+        </div>
+        <small class="text-muted">Posteriormente, los documentos deberan ser entregados en la institución en época de inscripciones. <br>
+            *Inscripción: este documento es el registro inicial, el cual debe entregarse una sola vez. <br>
+            **Matrícula: es el siguiente paso luego de la inscripción. Se deberá entregar nuevamente al inicio de cada ciclo lectivo.
+        </small>
     </main>
 
     <footer class="w-100 d-flex align-items justify-content-center">
@@ -67,7 +86,7 @@
     </footer>
 
 
-
+    <script src="https://kit.fontawesome.com/5b34b9778f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="http://localhost/www/sources/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

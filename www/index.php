@@ -42,8 +42,8 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
-                                <li><a class="dropdown-item" href="./faqFront.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./galeria.php">Archivo digital</a></li>
+                                <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./digArFront.php">Archivo digital</a></li>
                             </ul>
                         </li>
                     </ul>
