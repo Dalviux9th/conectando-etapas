@@ -12,8 +12,6 @@ body {
     height: 2.3rem;
     color: #FFF;
 }
- 
-
 
 
 .dropdown-item{
@@ -61,11 +59,12 @@ footer p {
     color: white;
 }
 
-footer{
-    font-size: 1rem;
-    background-color: #0080FE;
-
-}
+#footer{
+    color: #FFF;
+      font-size: 20rem;
+      background-color: #0080FE;
+        
+  }
 
 #iconos a{
     font-size: 2rem;

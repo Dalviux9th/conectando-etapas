@@ -33,17 +33,18 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php">Inicio</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./">Historia</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Básico</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Superior</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./Front.php">Galería</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./historyFront.php">Historia</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./basicFront.php">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./superiorFront.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Más información
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
-                                <li><a class="dropdown-item" href="./faqFront.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./galeria.php">Archivo digital</a></li>
+                                <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./digArFront.php">Archivo digital</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -124,16 +125,30 @@
 
     </main>
 
-    <footer class="w-100 d-flex align-items justify-content-center">
-            <p class="fs-5 px-3 pt-3">
-                EEST N°2 Ing. "Felipe Senillosa"
-            </p>
-            <div class="" id="iconos">
+    <div class="container-fluid" id="footer">
+        <div class="row text-center fs-5" id="footer">
+            <div class="col-12 mb-0 pt-0">
+                EEST N°2 "Ing. Felipe Senillosa"
+            </div>
+            <div class="col-12">
+                <small>
+                    Email: 
+                </small>
+            </div>
+            <div class="col-12">
+                <small>
+                    Teléfono:
+                </small>
+            </div>
+            <div class="col-12 ">
+                <small id="iconos">
                 <a href=""><i class="bi bi-instagram"></i></a>
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
+                </small>
             </div>
-        </footer>
+        </div>
+    </div>
 
 
 

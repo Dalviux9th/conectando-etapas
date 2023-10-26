@@ -1,8 +1,6 @@
 body {
     font-family: Cantarell;
     overflow-x: hidden;
-
-    height: 100vh;
     display: grid;
     grid-template-rows: auto auto 70px;
 }
@@ -186,10 +184,11 @@ footer p {
     color: white !important;
 }
 
-footer{
-    font-size: 1rem;
+#footer{
+  color: #FFF;
+    font-size: 20rem;
     background-color: #0080FE;
-
+      
 }
 
 #iconos a{
