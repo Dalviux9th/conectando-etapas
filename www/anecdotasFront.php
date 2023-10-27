@@ -58,74 +58,52 @@
     </header>
 
     <main class="container-fluid text-center mt-2">
-        <h1 class="col-12" >Anécdotas</h1>
 
-<div class="gtco-testimonials">
-  <div class="owl-carousel owl-carousel1 owl-theme">
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Ronne Galle <br />
-            <span> Project Manager </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Missy Limana<br />
-            <span> Engineer </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Martha Brown<br />
-            <span> Project Manager </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Hanna Lisem<br />
-            <span> Project Manager </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<hr>
+    <?php
+    include "includes/db_con.php";
 
-    <div class="dropdown">
-        <button class="btn btn-primary mx-auto fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#anec" aria-controls="anec" aria-expanded="false" aria-label="Toggle navigation">Ver todas las anécdotas</button>
-        <div class="row mt-3 mb-3 border border-1 rounded collapse" id="anec">
-            <div class="row text-center justify-content-center">
-                <div class="col-1 me-2">
-                    <strong>[Nombre]</strong><br>
-                    <strong>[Años que rindió]</strong>
+    $resultado = mysqli_query($link, "SELECT * FROM `anecdota`");
+    while ($datos = mysqli_fetch_array($resultado)) {
+        echo `<div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">`.$datos[3].` </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">`.$datos[1].`</h6>
+            <p class="card-text">`.$datos[2].`</p>
+            <div class="row  d-flex justify-content-end" id="1">
+        </div>
+    </div> `;
 
+    }
+    ?>
+
+
+<div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">`.$datos[3].` </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">`.$datos[1].`</h6>
+            <p class="card-text">`.$datos[2].`</p>
+            <div class="row  d-flex justify-content-end" id="1">
+            <div class="col-1 Reaccion" id="like">
+                    <div class="row">l</div>
+                    <div class="row"></div>
                 </div>
-                <div class="col-10">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga soluta tenetur non voluptates maxime nemo adipisci corrupti eum reprehenderit, eveniet perspiciatis unde consectetur natus voluptate possimus optio saepe quia, delectus illum repudiandae. Eius fugiat corporis sapiente aut! Aliquid, sit illo laboriosam repellat dignissimos sunt eligendi, et reiciendis, molestiae qui veritatis?</p>
+                <div class="col-1 Reaccion" id="dislike"> 
+                    <div class="row ">d</div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-1 Reaccion" id="love"> 
+                    <div class="row">c</div>
+                    <div class="row"></div>
+                </div>
+                <div class="col-1 Reaccion" id="smile"> 
+                    <div class="row">s</div>
+                    <div class="row"></div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </div> 
+
+
 
     </main>
 
@@ -183,6 +161,7 @@
 
         
     </script>
+    <script src="system/reaciones.js"></script>
 </body>
 
 </html>

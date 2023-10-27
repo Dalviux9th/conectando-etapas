@@ -9,8 +9,7 @@ window.addEventListener("scroll", () => {
     let scroll = window.scrollY;
     if(Math.ceil(scroll) >= scrolled){
       buscraImg()
-      };
-   })
+    };})
 
 
 function buscraImg() {
