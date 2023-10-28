@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     
-    <title>Galería - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <title>Documentos - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
@@ -52,16 +52,28 @@
         </nav>
     </header>
 
-    <main>
-        <div id="imagenes"></div>
+    <main class="container mt-5 text-center justify-content-center">
+        <div class="row fs-4">
+            <div class="col-12 col-md-4 offset-md-1" id="insc">
+                <p>¿Querés inscribirte? ¡Descargá e imprimí este documento y llenalo!</p>
+            </div>
+            <div class="col-12 col-md-4 offset-md-1 mt-3">
+                <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="downloadInsc" name="downloadInsc"><i class="fa-solid fa-download fa-bounce" style="color: #005eff;"></i> Descargar Inscripción.</a>
+            </div>
+        </div>
+        <div class="row fs-4 mt-2">
+            <div class="col-12 col-md-4 offset-md-1" id="insc">
+                <p>¿Querés rematricularte? ¡Descargá e imprimí este documento y llenalo!</p>
+            </div>
+            <div class="col-12 col-md-4 offset-md-1 mt-3">
+            <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="downloadMatr" name="downloadMatr"><i class="fa-solid fa-download fa-bounce" style="color: #005eff;"></i> Descargar Matrícula.</a>
+            </div>
+        </div>
+        <small class="text-muted">Posteriormente, los documentos deberan ser entregados en la institución en época de inscripciones. <br>
+            *Inscripción: este documento es el registro inicial, el cual debe entregarse una sola vez. <br>
+            **Matrícula: es el siguiente paso luego de la inscripción. Se deberá entregar nuevamente al inicio de cada ciclo lectivo.
+        </small>
     </main>
-
-    <script src="system/ajax.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <div class="container-fluid" id="footer">
         <div class="row text-center fs-5" id="footer">
@@ -88,5 +100,14 @@
         </div>
     </div>
 
+
+    <script src="https://kit.fontawesome.com/5b34b9778f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="http://localhost/www/sources/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="http://localhost/www/sources/js/bootstrap.bundle.js"></script>
+    
 </body>
 </html>
