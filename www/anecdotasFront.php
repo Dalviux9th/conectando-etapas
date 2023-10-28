@@ -25,7 +25,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -110,12 +110,12 @@
         <button class="btn btn-primary mx-auto fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#anec" aria-controls="anec" aria-expanded="false" aria-label="Toggle navigation">Ver todas las anécdotas</button>
         <div class="row mt-3 mb-3 border border-1 rounded collapse" id="anec">
             <div class="row text-center justify-content-center">
-                <div class="col-1 me-2">
+                <div class="col-12 col-md-2 me-2">
                     <strong>[Nombre]</strong><br>
                     <strong>[Años que rindió]</strong>
 
                 </div>
-                <div class="col-10">
+                <div class="col-9">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga soluta tenetur non voluptates maxime nemo adipisci corrupti eum reprehenderit, eveniet perspiciatis unde consectetur natus voluptate possimus optio saepe quia, delectus illum repudiandae. Eius fugiat corporis sapiente aut! Aliquid, sit illo laboriosam repellat dignissimos sunt eligendi, et reiciendis, molestiae qui veritatis?</p>
                 </div>
             </div>

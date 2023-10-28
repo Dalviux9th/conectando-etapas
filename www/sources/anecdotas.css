@@ -23,9 +23,6 @@ body {
 }
 
 
-.navbar{
-    transition: all 0.7s;
-}
 
 nav{
     color: white !important;
@@ -39,6 +36,7 @@ nav{
 }
 
 header{
+  z-index: 999;
     position: sticky;
 }
 
@@ -50,11 +48,19 @@ h1, h2, h3, h4, h5 {
     color: #1B036D !important;
 }
 
+.img-header{
+  height: 30px;
+  width: 30px;
+}
 
 .carousel-inner {
     max-height: 45rem;
 }
 
+#iconos a{
+  font-size: 2rem;
+  color: #1B036D;
+}
 
 #footer{
   color: #FFF;

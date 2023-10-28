@@ -137,6 +137,11 @@ div.item {
     filter: brightness(0.6);
 }
 
+.img-header{
+  height: 15px;
+  width: 15px;
+}
+
 .nav-scrolled{
     background-color: #0080FE;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
