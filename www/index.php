@@ -22,47 +22,35 @@
     <!--Navbar-->
     
     <header class="header">
-        <img class="bg-image" src="../www/sources/images/EESTN2.jpg" alt="">
+        <img src="sources/images/EESTN2.jpg" alt="" class="bg-image">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="extendNav">
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="">Inicio</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">Biblioteca</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Historia</a>
-                        </li> -->
-                                <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
-                                <li class="nav-item" ><a class="nav-link active" href="./">Historia</a></li>
-                                <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Básico</a></li>
-                                <li class="nav-item" ><a class="nav-link active" href="./">Ciclo Superior</a></li>
-                        
-
-                        <li class="nav-item dropdown">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php">Inicio</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./Front.php">Galería</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./historyFront.php">Historia</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./basicFront.php">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./superiorFront.php">Ciclo Superior</a></li>
+                        <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Más
-                        </a>
+                                Más información
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./FAQ.php">Documentos</a></li>
-                                <li><a class="dropdown-item" href="./galeryFront.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./galeria.php">Archivo digital</a></li>
+                                <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
+                                <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
+                                <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        
-        
     </header>
     <main>
 
@@ -113,7 +101,7 @@
                     <div class="thumbnail"> <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU1MTZiYmYyNGUgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTUxNmJiZjI0ZSI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
                             data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption mt-1">
-                            <h3 class="fw-bold">Lorem ipsum</h3>
+                            <h3 class="fw-bold">Ciclo Básico</h3>
                             <p class="fs-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat, sed lacinia justo auctor. Sed erat leo, iaculis
                                 eu ligula id, viverra pellentesque lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat,
                                 sed lacinia justo auctor. Sed erat leo, iaculis eu ligula id, viverra pellentesque lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna.</p>
@@ -126,7 +114,7 @@
                     <div class="thumbnail"> <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU1MTZiYmVlYzkgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTUxNmJiZWVjOSI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
                             data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption mt-1">
-                            <h3 class="fw-bold">Lorem ipsum</h3>
+                            <h3 class="fw-bold">Ciclo Superior</h3>
                             <p class="fs-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat, sed lacinia justo auctor. Sed erat leo, iaculis
                                 eu ligula id, viverra pellentesque lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat,
                                 sed lacinia justo auctor. Sed erat leo, iaculis eu ligula id, viverra pellentesque lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna.</p>
@@ -139,7 +127,7 @@
                     <div class="thumbnail"> <img data-src="holder.js/100%x200" alt="100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDI0MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU1MTZiYmVlYzkgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMnB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTUxNmJiZWVjOSI+PHJlY3Qgd2lkdGg9IjI0MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI4OS44NTkzNzUiIHk9IjEwNS4xIj4yNDJ4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+"
                             data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption mt-1">
-                            <h3 class="fw-bold">Lorem ipsum</h3>
+                            <h3 class="fw-bold">Especializaciones</h3>
                             <p class="fs-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat, sed lacinia justo auctor. Sed erat leo, iaculis
                                 eu ligula id, viverra pellentesque lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat,
                                 sed lacinia justo auctor. Sed erat leo, iaculis eu ligula id, viverra pellentesque lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna.</p>
@@ -153,16 +141,31 @@
 
     </main>
 
-    <footer class="w-100 d-flex align-items justify-content-center">
-        <p class="fs-5 px-3 pt-3">
-            EEST N°2 Ing. "Felipe Senillosa"
-        </p>
-        <div class="" id="iconos">
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-twitter"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
+    <div class="container-fluid" id="footer">
+        <div class="row text-center fs-5" id="footer">
+            <div class="col-12 mb-0 pt-0">
+                EEST N°2 "Ing. Felipe Senillosa"
+            </div>
+            <div class="col-12">
+                <small>
+                    Email: eestn2tandil@abc.gob.ar
+                </small>
+            </div>
+            <div class="col-12">
+                <small>
+                    Teléfono: 0249 - 4442637/33 
+                    Leando Alem 285
+                </small>
+            </div>
+            <div class="col-12 ">
+                <small id="iconos">
+                <a href="https://www.instagram.com/la.senillosa.eestn2.tandil/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/felipe.senillosa.9?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                </small>
+            </div>
         </div>
-    </footer>
+    </div>
+
 
 
 
