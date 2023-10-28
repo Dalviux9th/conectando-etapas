@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cantarell" />
-    <link rel="stylesheet" href="http://localhost/www/sources/custom.css">
-    <link rel="stylesheet" href="http://localhost/sources/css/bootstrap.min.css">
 
     <!--link rel="stylesheet" href="http://localhost/sources/css/bootstrap.min.css"-->
     <link rel="stylesheet" href="http://localhost/www/sources/anecdotas.css">
@@ -53,7 +51,7 @@
                 </div>
             </div>
         </nav>
-    </header>   
+    </header>
 
     <main class="container-fluid text-center mt-4">
         <h1 class="col-12" >Anécdotas</h1>
@@ -73,7 +71,35 @@
     </div>
     <div>
       <div class="card text-center me-1">
-
+        <div class="card-body">
+          <h5>Missy Limana<br />
+            <span> Engineer </span>
+          </h5>
+          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat ” </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center me-1">
+        <div class="card-body">
+          <h5>Martha Brown<br />
+            <span> Project Manager </span>
+          </h5>
+          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat ” </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center me-1">
+        <div class="card-body">
+          <h5>Hanna Lisem<br />
+            <span> Project Manager </span>
+          </h5>
+          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat ” </p>
+        </div>
       </div>
     </div>
   </div>
@@ -95,14 +121,7 @@
             </div>
         </div>
     </div>
-    </div> 
-    </div> 
-    </div>';   
-
-    }
-    ?>
-
-
+    </div>
 
     </main>
 
@@ -139,10 +158,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        (function () {
+       (function () {
         "use strict";
 
-        var carousels = function () {
+         var carousels = function () {
             $(".owl-carousel1").owlCarousel({
                 loop: true,
                 center: true,
@@ -174,7 +193,6 @@
 
         
     </script>
-    <script src="system/reaciones.js"></script>
 </body>
 
 </html>
