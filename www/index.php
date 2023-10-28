@@ -22,9 +22,10 @@
     <!--Navbar-->
     
     <header class="header">
+        <img src="sources/images/EESTN2.jpg" alt="" class="bg-image">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,7 +44,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
                                 <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./digArFront.php">Archivo digital</a></li>
+                                <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li>
                             </ul>
                         </li>
                     </ul>
