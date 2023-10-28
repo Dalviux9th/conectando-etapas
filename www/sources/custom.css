@@ -6,8 +6,14 @@ body {
     display: grid;
     grid-template-rows: auto auto 70px;
 }
-
-
+svg{
+  width: 100%;
+  height: 100%;
+}
+.svg{
+  width: 20px;
+  height: 20px;
+}
 
 
 #carruselGalery{

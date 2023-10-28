@@ -1,6 +1,7 @@
 window.addEventListener("click", (event)=>{
-if (event.target.parentNode.classList.contains("Reaccion")){
-    mandarreacionsDB( event.target.parentNode.parentNode.id,  event.target.parentNode.id)
+if (event.target.parentNode.parentNode.parentNode.classList.contains("Reaccion")){
+    console.log("Hola")
+    mandarreacionsDB( event.target.parentNode.parentNode.parentNode.id,  event.target.parentNode.parentNode.id)
 }
 })
 
