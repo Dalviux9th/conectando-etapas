@@ -63,6 +63,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <div class="container-fluid" id="footer">
+        <div class="row text-center fs-5" id="footer">
+            <div class="col-12 mb-0 pt-0">
+                EEST N°2 "Ing. Felipe Senillosa"
+            </div>
+            <div class="col-12">
+                <small>
+                    Email: eestn2tandil@abc.gob.ar
+                </small>
+            </div>
+            <div class="col-12">
+                <small>
+                    Teléfono: 0249 - 4442637/33 
+                    Leando Alem 285
+                </small>
+            </div>
+            <div class="col-12 ">
+                <small id="iconos">
+                <a href="https://www.instagram.com/la.senillosa.eestn2.tandil/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/felipe.senillosa.9?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                </small>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

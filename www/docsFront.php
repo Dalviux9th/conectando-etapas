@@ -43,7 +43,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
                                 <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./digArFront.php">Archivo digital</a></li>
+                                <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -82,19 +82,19 @@
             </div>
             <div class="col-12">
                 <small>
-                    Email: 
+                    Email: eestn2tandil@abc.gob.ar
                 </small>
             </div>
             <div class="col-12">
                 <small>
-                    Teléfono:
+                    Teléfono: 0249 - 4442637/33 
+                    Leando Alem 285
                 </small>
             </div>
             <div class="col-12 ">
                 <small id="iconos">
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/la.senillosa.eestn2.tandil/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/felipe.senillosa.9?locale=es_LA"><i class="bi bi-facebook"></i></a>
                 </small>
             </div>
         </div>
