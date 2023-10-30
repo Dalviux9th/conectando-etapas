@@ -53,7 +53,11 @@
     </header>
 
     <main>
-        <div id="imagenes"></div>
+        <div id="imagenes">
+
+            <!-- Rellenado dinámicamente -->
+
+        </div>
     </main>
 
     <script src="system/ajax.js"></script>
