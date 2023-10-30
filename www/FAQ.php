@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     
-    <title>FAQ - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <title>Preguntas Frecuentes - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 <body>
 
 
-<header class="header">
+    <header class="header">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
             <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
@@ -50,62 +50,86 @@
         </nav>
     </header>
     
+    <main class="container-fluid pt-5">
+    <?php
+        $done = '<div class="alert alert-success d-flex alert-dismissible fade show" role="alert"><div><svg class="px-3" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#1e8816}</style><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>Consulta publicada correctamente.</div><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+        $doneNot = '<div class="alert alert-danger d-flex alert-dismissible fade show" role="alert"><div><svg class="px-3" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ba1717}</style><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>Hubo un error. Por favor reintente la carga de su consulta.</div><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+        if(isset($_GET['done']))
+            echo ($_GET['done'] == 1) ? $done : $doneNot;
+    ?>
 
-    <main class="container-fluid">
-        <div class="row m-5">
-            <div class="col-8">
-                <div class="card">
-                    <div class="card-header"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsum? </div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Sapiente aliquid dignissimos similique saepe eligendi harum tempora nobis molestiae provident voluptatum doloremque,
-                         laudantium explicabo sit accusamus quod, nisi esse perspiciatis? Labore.
+        <div class="row px-5 py-2">
+            <div class="col-12 col-md-6 col-lg-7 pe-md-5 mb-5 mb-md-0"><!-- Acordeon de preguntas frecuentes -->
+
+                <h2>Preguntas Frecuentes</h2>
+                <p>Encuentre solución rápida a su inconveniente o, si lo prefiere, puede enviarnos su consulta.</p>
+
+                <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Pregunta 1?
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Respuesta 1
+                        </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card">    
-                    <div class="card-header"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsum? </div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente aliquid dignissimos similique saepe eligendi harum tempora nobis molestiae provident voluptatum doloremque,
-                        laudantium explicabo sit accusamus quod, nisi esse perspiciatis? Labore.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Pregunta 2?
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Respuesta 2
+                        </div>
+                        </div>
                     </div>
-                </div>   
-                <div class="card">    
-                    <div class="card-header"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsum? </div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente aliquid dignissimos similique saepe eligendi harum tempora nobis molestiae provident voluptatum doloremque,
-                        laudantium explicabo sit accusamus quod, nisi esse perspiciatis? Labore.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Pregunta 3?
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Respuesta 3
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <form action="enviar_consulta.php" method="post">
+            <div class="col-12 col-md-6 col-lg-5 bg-light p-3"><!-- Formulario de consulta -->
+                <form action="system/enviar_consulta.php" method="post">
+                    
+                    <h3>¿Tiene alguna consulta?</h3>
+                    <p>Escríbanos y le responderemos lo más pronto posible.</p>
+
                     <div class="mb-2">
-                        <div class="card">
-                            <div class="card-header">¿Tiene alguna consulta? escribenos y te responderomos lo mas pronto posible</div>
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name ="Nombre"required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="exampleFormControlInput2" class="form-label">Direccion de email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com" name="Email" required>
-                                </div>
-                                <div class="mb-2">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Consulta" required></textarea>
-                                </div>
-                                <div class="mb-2">
-                                    <button type="submit" class="btn btn-primary" name="Envio">Submit</button>
-                                </div>
-                            </div>
-                        </div>
+                        <label for="nombre" class="form-label">Nombre*</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Complete con su nombre y apellido" name="Nombre" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="mail" class="form-label">Direccion de email</label>
+                        <input type="email" class="form-control" id="mail" placeholder="En esta dirección recibirá su respuesta." name="Email" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="consulta" class="form-label">Consulta</label>
+                        <textarea class="form-control" id="consulta" rows="3" name="Consulta" required></textarea>
+                    </div>
+                    <div class="mb-2">
+                        <button type="submit" class="btn btn-primary" name="Envio">Enviar</button>
                     </div>
                 </form>
             </div>
         </div>
-</main>
+    </main>
 
-<div class="container-fluid" id="footer">
+    <div class="container-fluid" id="footer">
         <div class="row text-center fs-5" id="footer">
             <div class="col-12 mb-0 pt-0">
                 EEST N°2 "Ing. Felipe Senillosa"
@@ -136,8 +160,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="http://localhost/www/sources/js/bootstrap.bundle.js"></script>
-
-
 
     </body>
 </html>
