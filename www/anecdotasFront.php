@@ -1,5 +1,10 @@
+<?php
+include_once "includes/db_con.php";
+$anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
+
+?>
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
+<html lang="es" data-bs-theme="<?php echo ($dark_mode) ? 'dark' : 'light'; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,74 +58,86 @@
         </nav>
     </header>
 
-    <main class="container-fluid text-center mt-4">
-        <h1 class="col-12" >Anécdotas</h1>
+  <main class="container-fluid text-center mt-4">
+    <h1 class="col-12" >Anécdotas</h1>
 
-<div class="gtco-testimonials" style="width: 100vw;">
-  <div class="owl-carousel owl-carousel1 owl-theme">
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Ronne Galle <br />
-            <span> Project Manager </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
+  <div class="gtco-testimonials" style="width: 100vw;">
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div>
+        <div class="card text-center me-1">
+          <div class="card-body">
+            <h5>Ronne Galle <br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Missy Limana<br />
-            <span> Engineer </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
+      <div>
+        <div class="card text-center me-1">
+          <div class="card-body">
+            <h5>Missy Limana<br />
+              <span> Engineer </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Martha Brown<br />
-            <span> Project Manager </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
+      <div>
+        <div class="card text-center me-1">
+          <div class="card-body">
+            <h5>Martha Brown<br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="card text-center me-1">
-        <div class="card-body">
-          <h5>Hanna Lisem<br />
-            <span> Project Manager </span>
-          </h5>
-          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat ” </p>
+      <div>
+        <div class="card text-center me-1">
+          <div class="card-body">
+            <h5>Hanna Lisem<br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod maxime placeat ” </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<hr>
+  <hr>
 
     <div class="dropdown">
-        <button class="btn btn-primary mx-auto fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#anec" aria-controls="anec" aria-expanded="false" aria-label="Toggle navigation">Ver todas las anécdotas</button>
-        <div class="row mt-3 mb-3 border border-1 rounded collapse" id="anec">
-            <div class="row text-center justify-content-center">
-                <div class="col-12 col-md-2 me-2">
-                    <strong>[Nombre]</strong><br>
-                    <strong>[Años que rindió]</strong>
-
-                </div>
-                <div class="col-9">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga soluta tenetur non voluptates maxime nemo adipisci corrupti eum reprehenderit, eveniet perspiciatis unde consectetur natus voluptate possimus optio saepe quia, delectus illum repudiandae. Eius fugiat corporis sapiente aut! Aliquid, sit illo laboriosam repellat dignissimos sunt eligendi, et reiciendis, molestiae qui veritatis?</p>
-                </div>
+      <button class="btn btn-primary mx-auto fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#anec" aria-controls="anec" aria-expanded="false" aria-label="Toggle navigation">Ver todas las anécdotas</button>
+      <div class="row mt-3 mb-3 border border-1 rounded collapse" id="anec">
+            
+        <?php
+          while ($datos = mysqli_fetch_array($anec_fetch)) {
+          echo "
+          <div class='row justify-content-center mb-2'>
+            <div class='col-12 col-sm-10 col-md-8'>
+              <h3 class='text-center'>
+                $datos[1]
+              </h3>
+              <div class='text-start'>
+                <md>$datos[3]</md>
+              </div>
+              <div class='text-end'>
+                Autor: $datos[4]
+                <br>
+                Fecha: $datos[5]
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
+          "; }
+        ?>
+
+        
+      </div>
     </div>
 
     </main>
@@ -149,42 +166,44 @@
             </div>
         </div>
     </div>
-
-
-
+    
+    <script type="module" src="sources/librerias/Markdown-Tag-main/markdown-tag.js"></script>
+    <script src="sources/librerias/Markdown-Tag-main/markdown-tag-commonmark.js"></script>
+    <!-- <script src="sources/librerias/Markdown-Tag-main/markdown-tag-GitHub.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-       (function () {
-        "use strict";
+  
+  <script>
+    (function () {
+      "use strict";
 
-         var carousels = function () {
-            $(".owl-carousel1").owlCarousel({
-                loop: true,
-                center: true,
-                margin: 0,
-                responsiveClass: true,
-                nav: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    680: {
-                        items: 2,
-                        nav: false,
-                        loop: false
-                    },
-                    1000: {
-                        items: 3,
-                        nav: true
-                    }
-                }
-            });
-        };
+      var carousels = function () {
+        $(".owl-carousel1").owlCarousel({
+          loop: true,
+          center: true,
+          margin: 0,
+          responsiveClass: true,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false
+            },
+            680: {
+              items: 2,
+              nav: false,
+              loop: false
+            },
+            1000: {
+              items: 3,
+              nav: true
+            }
+          }
+        });
+    };
 
   (function ($) {
     carousels();
@@ -192,7 +211,7 @@
 })();
 
         
-    </script>
+  </script>
 </body>
 
 </html>

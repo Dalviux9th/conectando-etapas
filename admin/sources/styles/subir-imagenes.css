@@ -12,6 +12,28 @@ span.sticky-top {
     text-shadow: 0px 0px 5px red;
 }
 
+.cardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h4 {
+        width: 60vw;
+        display: inline;
+        overflow: hidden;
+        word-break: keep-all;
+        line-break: strict;
+        white-space: nowrap;
+    }
+
+    & i {
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 .emptyPlaceholder {
     display: none;
 }
