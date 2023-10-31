@@ -71,19 +71,23 @@ function buscraImg() {
     })
   .then(res => res.json())
   .then(res => {
-    console.log(res)
-    let fragment = document.createDocumentFragment();
-    let element = document.createElement("div")
-    element.classList.add("row")
-for (const ele of res) {
-  element.innerHTML += `<div class="col-12 col-sm-6 col-md-4 col-xl-3 pb-3"><img loading="lazy" class="img" src="http://localhost/www/imagenes/${ele.Direccion}" alt=""></div>`;
-}
+    if(res[(Object.keys(res).length-1)].ID != id){
+      
+      console.log(res)
+      let fragment = document.createDocumentFragment();
+      let element = document.createElement("div")
+      element.classList.add("row")
+      
+      for (const ele of res) {
+        element.innerHTML += `<div class="col-12 col-sm-6 col-md-4 col-xl-3 pb-3"><img loading="lazy" class="img" src="http://localhost/www/imagenes/${ele.Direccion}" alt=""></div>`;
+      }
       fragment.appendChild(element)
-    let a  = res[(Object.keys(res).length-1)].ID;
-    id = a;
-    console.log(res[(Object.keys(res).length-1)].ID)
-
-    document.getElementById("imagenes").appendChild(fragment);
+      let a  = res[(Object.keys(res).length-1)].ID;
+      id = a;
+      console.log(res[(Object.keys(res).length-1)].ID)
+      
+      document.getElementById("imagenes").appendChild(fragment);
+    }
   }) 
 
   
