@@ -20,7 +20,7 @@ $id = $_POST["id"];
     $res2 = mysqli_query($link, "SELECT DISTINCT `imagen`.`id_img`, `imagen`.`ubicacion`, `tiene_categoria`.`id_categoria`
     FROM `imagen` 
         LEFT JOIN `tiene_categoria` ON `tiene_categoria`.`id_imagen` = `imagen`.`id_img`
-        WHERE 1 $where AND `id_img` > $id 
+        WHERE $where  AND imagen.id_img > $id
         GROUP BY id_imagen
         LIMIT 20");
 
