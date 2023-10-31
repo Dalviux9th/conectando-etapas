@@ -55,24 +55,21 @@
         <div class="row m-5">
             <div class="col-8">
                 <div class="card">
-                    <div class="card-header"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsum? </div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Sapiente aliquid dignissimos similique saepe eligendi harum tempora nobis molestiae provident voluptatum doloremque,
-                         laudantium explicabo sit accusamus quod, nisi esse perspiciatis? Labore.
+                    <div class="card-header"> ¿La escuela tiene un código de vestimenta? </div>
+                    <div class="card-body">
+                        Si, la escuela posée un código de vestimenta. Este se basa en los colores azules, blancos, y negros. También ofrecemos la posibilidad de adquirir con la vestimenta oficial con el logo del establecimiento.
                     </div>
                 </div>
                 <div class="card">    
-                    <div class="card-header"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsum? </div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente aliquid dignissimos similique saepe eligendi harum tempora nobis molestiae provident voluptatum doloremque,
-                        laudantium explicabo sit accusamus quod, nisi esse perspiciatis? Labore.
+                    <div class="card-header"> ¿Cuales son los requisitos? </div>
+                    <div class="card-body">
+                        No existen requisitos. Solo hay que anotarse. Cabe mencionar que la escuela se rige por un cupo de alumnos que pueden quedar.
                     </div>
                 </div>   
                 <div class="card">    
-                    <div class="card-header"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit ipsum? </div>
-                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sapiente aliquid dignissimos similique saepe eligendi harum tempora nobis molestiae provident voluptatum doloremque,
-                        laudantium explicabo sit accusamus quod, nisi esse perspiciatis? Labore.
+                    <div class="card-header"> ¿Cuál es el correo electrónico de la escuela? </div>
+                    <div class="card-body">
+                        El correo electrónico de la escuela es eestn2tandil@abc.gob.ar o Tecnica2.senillosa@gmail.com
                     </div>
                 </div>
             </div>
