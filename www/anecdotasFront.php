@@ -49,7 +49,7 @@ session_start();
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
                                 <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li>
+                                <!---  <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li> -->
                             </ul>
                         </li>
                     </ul>
