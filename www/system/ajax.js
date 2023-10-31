@@ -51,13 +51,14 @@ window.addEventListener("scroll", () => {
 
 
 
-
 function buscraImg() {
   
     let data = new FormData
     data.append('pass', '1234');
     data.append('id', id);
     if(where.length > 1 ){
+      where = where.substring(where.indexOf("R")+1)
+      
       data.append('tipo', 2);
       data.append('where', where);
       console.log(id)
