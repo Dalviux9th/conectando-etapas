@@ -87,7 +87,17 @@ session_start();
     </div>
     <div>
       <div class="card text-center me-1">
-
+        <div class="card-body">
+          <h5>Missy Limana<br />
+            <span> Engineer </span>
+          </h5>
+          <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+            impedit quo minus id quod maxime placeat ” </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center me-1">
         <div class="card-body">
           <h5>Martha Brown<br />
             <span> Project Manager </span>

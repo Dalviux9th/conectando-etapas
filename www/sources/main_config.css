@@ -4,6 +4,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: 70px auto 70px;
+    color: #1B036D !important;
 }
 
 #menu a, span {
@@ -18,7 +19,7 @@ body {
     color: #000 !important;
 }
 
-p {
+p, .card-body{
     color: #1B036D !important;
 }
 
@@ -31,7 +32,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.card-header {
     color: #1B036D !important	;
 }
 
@@ -39,6 +41,7 @@ h5 {
     background-color: rgb(201, 201, 201);
     border-radius: 5px;
 }
+
 
 
 header, nav{
@@ -69,6 +72,11 @@ footer p {
       font-size: 20rem;
       background-color: #0080FE;
         
+  }
+
+  .img-header{
+    height: 30px;
+    width: 30px;
   }
 
 #iconos a{

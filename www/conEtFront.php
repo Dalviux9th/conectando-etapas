@@ -53,10 +53,7 @@
     </header>
 
 
-    
-    <main>
-        <div id="imagenes"></div>
-    </main>
+
 
     
 

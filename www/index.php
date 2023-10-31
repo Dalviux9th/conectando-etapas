@@ -63,7 +63,7 @@
             la Escuela de Aprendizaje Industrial, que funcionaba en las calles Alem y Maipú, y
             la Escuela Técnica de Oficios de la Nación ubicada en el antiguo edificio de Las Heras y 9 de Julio.
             </p>
-            <a href="#" class="btn btn-primary btn-lg btn-block">Más informacion</a>
+            <a href="./historyFront.php" class="btn btn-primary btn-lg btn-block">Más informacion</a>
         </section>
 
         <!--Preview-->
@@ -102,11 +102,7 @@
                             data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption mt-1">
                             <h3 class="fw-bold">Ciclo Básico</h3>
-                            <p class="fs-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat, sed lacinia justo auctor. Sed erat leo, iaculis
-                                eu ligula id, viverra pellentesque lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat,
-                                sed lacinia justo auctor. Sed erat leo, iaculis eu ligula id, viverra pellentesque lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna.</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                            </p>
+                            <p class="fs-5">Infórmese sobre los primeros años de estudio en la escuela, los cuales comprenden 1°, 2°, y 3° año <a href="basicFront.php">aquí</a>.</p>                            </p>
                         </div>
                     </div>
                 </div>
@@ -115,11 +111,7 @@
                             data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption mt-1">
                             <h3 class="fw-bold">Ciclo Superior</h3>
-                            <p class="fs-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat, sed lacinia justo auctor. Sed erat leo, iaculis
-                                eu ligula id, viverra pellentesque lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat,
-                                sed lacinia justo auctor. Sed erat leo, iaculis eu ligula id, viverra pellentesque lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna.</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                            </p>
+                            <p class="fs-5"> Continúe revisando nuestro calendario académico para las diferenctes ofertas para ciclo superior <a href="cicloSuperior.php">aquí</a></p>
                         </div>
                     </div>
                 </div>
@@ -128,11 +120,7 @@
                             data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
                         <div class="caption mt-1">
                             <h3 class="fw-bold">Especializaciones</h3>
-                            <p class="fs-5"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat, sed lacinia justo auctor. Sed erat leo, iaculis
-                                eu ligula id, viverra pellentesque lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna. Vestibulum luctus dui ante, quis auctor orci tempus eu. Praesent posuere ex at massa volutpat,
-                                sed lacinia justo auctor. Sed erat leo, iaculis eu ligula id, viverra pellentesque lorem.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin metus urna.</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                            </p>
+                            <p class="fs-5">Oriéntese sobre las diferentes tecnicaturas que ofrecemos a partir de 4° año, las materias de cada una, y su respectiva salida laboral <a href="especFront.php">aquí</a>.</p>
                         </div>
                     </div>
                 </div>
