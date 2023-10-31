@@ -13,18 +13,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
-    <title>Archivo Digital - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <title>Historia - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
 <body>
 
-    <!--Navbar-->
-    
-    <header class="header">
+<header class="header">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,7 +31,7 @@
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.php">Inicio</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./anecdotasFront.php">Anécdotas</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./galeryFront.php">Galería</a></li>
-                        <li class="nav-item" ><a class="nav-link" href="./historyFront.php">Historia</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./historyFront.php">Historia</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./basicFront.php">Ciclo Básico</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./cicloSuperior.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
@@ -43,7 +41,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
                                 <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li>
+                                <!---  <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -52,12 +50,45 @@
         </nav>
     </header>
 
+    <main class="container mb-5 mt-5">
+        <h1 class="text-center">Historia de nuestra escuela</h1>
 
 
+        <div class="row mt-5 row-history ">
+            <div class="col-12 col-md-4">
+                <img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid mb-3">
+            </div>
+            <div class="col-12 col-md-8 fs-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus exercitationem fugit, voluptates voluptatem modi sed vel unde tempora nihil libero quae assumenda atque culpa officiis cum. Nesciunt rerum voluptas animi. Quod, cumque consequuntur laudantium ab quidem dolore numquam repudiandae labore quis nesciunt maiores iusto quam eaque modi hic error!
+            </div>
+        </div>
+<hr>
+        <div class="row mt-3 mb-3 row-history">
+            <div class="col-12 col-md-8 fs-4 mb-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus exercitationem fugit, voluptates voluptatem modi sed vel unde tempora nihil libero quae assumenda atque culpa officiis cum. Nesciunt rerum voluptas animi. Quod, cumque consequuntur laudantium ab quidem dolore numquam repudiandae labore quis nesciunt maiores iusto quam eaque modi hic error!
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
 
-    
 
-      <div class="container-fluid" id="footer">
+        <div class="row mt-5">
+            <div class="col-md-3 col-6">
+                <div class="row gap-5">
+                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
+                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
+                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
+                </div>
+            </div>
+            <div class="col-md-6 col-6 fs-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam laudantium praesentium exercitationem corporis id maxime placeat autem, hic fugit modi incidunt! Quos dolorum blanditiis ipsa quidem. Praesentium, optio. Dolorum rerum reprehenderit ad, sunt distinctio, quibusdam a molestias, minus fugit necessitatibus corporis aliquid nam officia? Alias quia earum architecto velit.
+            </div>
+        </div>
+    </main>
+
+
+    <div class="container-fluid" id="footer">
         <div class="row text-center fs-5" id="footer">
             <div class="col-12 mb-0 pt-0">
                 EEST N°2 "Ing. Felipe Senillosa"
@@ -83,7 +114,7 @@
     </div>
 
 
-
+    <script src="https://kit.fontawesome.com/5b34b9778f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="http://localhost/www/sources/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

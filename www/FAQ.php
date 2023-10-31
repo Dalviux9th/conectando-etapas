@@ -68,36 +68,36 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            ¿Pregunta 1?
+                        ¿La escuela tiene un código de vestimenta?
                         </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Respuesta 1
+                        Si, la escuela posée un código de vestimenta. Este se basa en los colores azules, blancos, y negros. También ofrecemos la posibilidad de adquirir con la vestimenta oficial con el logo del establecimiento.
                         </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Pregunta 2?
+                        ¿Cuales son los requisitos?
                         </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Respuesta 2
+                        No existen requisitos. Solo hay que anotarse. Cabe mencionar que la escuela se rige por un cupo de alumnos máximo que pueden quedar.
                         </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            ¿Pregunta 3?
+                        ¿Cuál es el correo electrónico de la escuela?
                         </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Respuesta 3
+                        El correo electrónico de la escuela es eestn2tandil@abc.gob.ar o Tecnica2.senillosa@gmail.com
                         </div>
                         </div>
                     </div>
@@ -160,6 +160,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="http://localhost/www/sources/js/bootstrap.bundle.js"></script>
+
 
     </body>
 </html>

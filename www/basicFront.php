@@ -13,18 +13,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
-    <title>Archivo Digital - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <title>Ciclo Básico - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
 <body>
 
-    <!--Navbar-->
-    
-    <header class="header">
+<header class="header">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,7 +32,7 @@
                         <li class="nav-item" ><a class="nav-link" href="./anecdotasFront.php">Anécdotas</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./galeryFront.php">Galería</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./historyFront.php">Historia</a></li>
-                        <li class="nav-item" ><a class="nav-link" href="./basicFront.php">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./basicFront.php">Ciclo Básico</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./cicloSuperior.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -43,7 +41,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
                                 <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
-                                <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li>
+                                <!---  <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -52,12 +50,50 @@
         </nav>
     </header>
 
+    <main class="container mb-5 ">
+        <h1 class="text-center mt-5 mb-5">Ciclo Básico</h1>
+    <div class="row">
+        <div class="col-4">
+        <div class="card text-center">
+        <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+            <div class="card-body">
+                <h2 class="card-title">Primer año</h2>
+                <h4 class="card-title">Información</h4>
+                <p class="card-text fs-5">El primer año de la Educación Secundaria Técnica consta de formación general y formación científico tecnológica, y se divide en 8 materias: Ciencias Naturales, Ciencias Sociales, Educación Artística, Educación Física, Inglés, Matemática, Prácticas del Lenguaje y Construcción Ciudadana. La cantidad total de módulos semanales en el primer año es de 24.</p>
+                <h4 class="card-title">Talleres</h4>
+                <p class="card-text fs-5">Dentro de la formación científico-tecnológica se dictan tres materias: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, cada una con una carga horaria anual de 72 horas, y con 6 módulos semanales</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-4">
+        <div class="card text-center">
+        <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+                <div class="card-body">
+                <h2 class="card-title">Segundo año</h2>
+                <h4 class="card-title">Información</h4>
+                <p class="card-text fs-5">El segundo año de la Educación Secundaria Técnica incluye ocho asignaturas en el área de Formación General, con cuatro módulos semanales cada una, con materias como Biología, Construcción de Ciudadanía, Educación Artística, Educación Física, Físico Química, Geografía, Historia, Matemática, Prácticas del Lenguaje, e Inglés. La cantidad total de módulos semanales del segundo año es de 24.</p>
+                <h4 class="card-title">Talleres</h4>
+                <p class="card-text fs-5">El segundo año de la Educación Secundaria Técnica incluye tres materias técnico-específicas: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, con un total de ocho módulos semanales. Procedimientos Técnicos se vuelve el área con más horas con 144, el resto de materias continua con 72 horas.</p>
+            </div>
+        </div>
+        </div>
+        <div class="col-4">
+        <div class="card text-center">
+        <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+                <div class="card-body">
+                <h2 class="card-title">Tercer año</h2>
+                <h4 class="card-title">Información</h4>
+                <p class="card-text fs-5">El tercer año de la Educación Secundaria Técnica incluye ocho asignaturas en el área de Formación General, con cuatro módulos semanales cada una, con materias como Biología, Construcción de Ciudadanía, Educación Artística, Educación Física, Físico Química, Geografía, Historia, Inglés, Matemática, y Prácticas del Lenguaje.</p>
+                <h4 class="card-title">Talleres</h4>
+                <p class="card-text fs-5">Dentro de la formación científico-tecnológica se repiten las tres materias: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, en este año Sistemas Tecnológicos se amplía con 144 horas anuales, el resto se mantiene en 72. La cantidad total de módulos semanales es de 8.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </main>
 
 
-
-    
-
-      <div class="container-fluid" id="footer">
+    <div class="container-fluid" id="footer">
         <div class="row text-center fs-5" id="footer">
             <div class="col-12 mb-0 pt-0">
                 EEST N°2 "Ing. Felipe Senillosa"
@@ -83,7 +119,7 @@
     </div>
 
 
-
+    <script src="https://kit.fontawesome.com/5b34b9778f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="http://localhost/www/sources/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
