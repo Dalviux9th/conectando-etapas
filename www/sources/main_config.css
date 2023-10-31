@@ -73,6 +73,17 @@ h5,
   }
 
 
+  .card-img-top{
+    width: 5vw;
+    height: 40vh;
+
+  }
+
+  .cardSup{
+    width: 40vw !important;
+  }
+
+
 header, nav{
     color: white !important;
     background-color: #0080FE !important;
