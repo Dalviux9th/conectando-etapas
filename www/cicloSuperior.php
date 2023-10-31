@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cantarell" />
-    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cantarell"/>
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/www/sources/main_config.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
-    <title>Ciclo Básico - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <title>Ciclo Superior - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
 <body>
-
+ 
 <header class="header">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
@@ -50,10 +50,11 @@
         </nav>
     </header>
 
-
 <main class="container-fluid mt-5">
         <div class="row">
             <h1 class="fs-2 fw-bold d-flex justify-content-center mb-3">Ciclo Superior</h1>
+            <div Class="col-12 text-center">El ciclo superior tiene una duracion de cuatro años y posee la modalidad de Educación Técnico Profesional en donde se definen las tecnicaturas que se mostraran mas abajo. Cada una de estas orientaciones posee una Formacion cientifico-tecnologica, la cual tiene que ver con diferentes saberes que otorgan conocimientos, habilidades, destrezas y valores. Esta organizada en modulos y su funcion es comprender, integrar y profundizar los contenidos que introducen a los aspectos específicos de cada especialidad.</div>
+        </div>
         </div>
 
         <div class="row d-flex">
@@ -182,6 +183,8 @@
 
 
     <div class="container-fluid" id="footer">
+
+
         <div class="row text-center fs-5" id="footer">
             <div class="col-12 mb-0 pt-0">
                 EEST N°2 "Ing. Felipe Senillosa"
@@ -208,6 +211,7 @@
 
 
     <script src="https://kit.fontawesome.com/5b34b9778f.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="http://localhost/www/sources/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
