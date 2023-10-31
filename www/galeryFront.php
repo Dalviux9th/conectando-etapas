@@ -30,12 +30,12 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="extendNav">
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php">Inicio</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./Front.php">Galería</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./historyFront.php">Historia</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./basicFront.php">Ciclo Básico</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./superiorFront.php">Ciclo Superior</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.php">Inicio</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./anecdotasFront.php">Anécdotas</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./galeryFront.php">Galería</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./historyFront.php">Historia</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./basicFront.php">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./cicloSuperior.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Más información

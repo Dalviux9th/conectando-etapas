@@ -30,7 +30,7 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.php">Inicio</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./anecdotasFront.php">Anécdotas</a></li>
-                        <li class="nav-item" ><a class="nav-link" href="./Front.php">Galería</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./galeryFront.php">Galería</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./historyFront.php">Historia</a></li>
                         <li class="nav-item" ><a class="nav-link" href="./basicFront.php">Ciclo Básico</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./cicloSuperior.php">Ciclo Superior</a></li>
@@ -52,9 +52,8 @@
 
 <main class="container-fluid mt-5">
         <div class="row">
-            <h1 class="fs-2 fw-bold d-flex justify-content-center mb-3">Ciclo Superior</h1>
-            <div Class="col-12 text-center">El ciclo superior tiene una duracion de cuatro años y posee la modalidad de Educación Técnico Profesional en donde se definen las tecnicaturas que se mostraran mas abajo. Cada una de estas orientaciones posee una Formacion cientifico-tecnologica, la cual tiene que ver con diferentes saberes que otorgan conocimientos, habilidades, destrezas y valores. Esta organizada en modulos y su funcion es comprender, integrar y profundizar los contenidos que introducen a los aspectos específicos de cada especialidad.</div>
-        </div>
+            <h1 class="d-flex justify-content-center mb-3">Ciclo Superior</h1>
+            <p class="text-center fs-5">El ciclo superior tiene una duracion de cuatro años y posee la modalidad de Educación Técnico Profesional en donde se definen las tecnicaturas que se mostraran mas abajo. Cada una de estas orientaciones posee una Formacion cientifico-tecnologica, la cual tiene que ver con diferentes saberes que otorgan conocimientos, habilidades, destrezas y valores. Esta organizada en modulos y su funcion es comprender, integrar y profundizar los contenidos que introducen a los aspectos específicos de cada especialidad.</p>
         </div>
 
         <div class="row d-flex">
@@ -72,7 +71,7 @@
                  <div class="card">
                     <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title ">Quinto Año</h5>
+                        <h4 class="card-title text-center">Quinto Año</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -82,7 +81,7 @@
                  <div class="card">
                     <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title ">Sexto Año</h5>
+                        <h4 class="card-title text-center">Sexto Año</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -92,7 +91,7 @@
                 <div class="card">
                     <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">Séptimo Año</h4>
+                        <h4 class="card-title text-center">Séptimo Año</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -102,12 +101,12 @@
     <hr>
 
     <h1 class="text-center">Especializaciones</h1>
-    <p>Aquí podrá ver las diferentes elecciones de especializaciones, las cuales te otorgan la tecnicatura específica. Si quiere ver más información, haga click en alguna de las diferentes tarjetas</p>
+    <p class="text-center fs-5">Aquí podrá ver las diferentes elecciones de especializaciones, las cuales te otorgan la tecnicatura específica. Si quiere ver más información, haga click en alguna de las diferentes tarjetas</p>
 
-    <div class="row d-flex">
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+    <div class="row d-flex mb-5">
+            <div class="col-12 col-md-4 d-flex mb-3 justify-content-center">
                  <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+                    <img src="imagenes/informatica3.jpg" class="card-img-top p-0 m-0" alt="">
                     <div class="card-body">
                         <h4 class="card-title text-center">Programación</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,61 +114,54 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="col-12 col-md-4 d-flex mb-3 justify-content-center">
                  <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                    <img src="imagenes/quimica2.jpg" class="card-img-top " alt="...">
                     <div class="card-body">
-                        <h5 class="card-title ">Quimica</h5>
+                        <h4 class="card-title text-center">Quimica</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="col-12 col-md-4 d-flex mb-3 justify-content-center">
                  <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                    <img src="imagenes/maestro.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title ">Maestro Mayor de Obra</h5>
+                        <h4 class="card-title text-center">Maestro Mayor de Obra</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="row d-flex mb-5">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="card">
+                    <img src="imagenes/electro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Electromecánica</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+
+            <div class="col-12 col-md-4  d-flex justify-content-center">
                 <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                    <img src="imagenes/automotores.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">Electromecánica</h4>
+                        <h4 class="card-title text-center">Automotores</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
                 <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                    <img src="imagenes/informatica3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Automotores</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Informática</h4>
+                        <h4 class="card-title text-center">Informática</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
