@@ -1,11 +1,13 @@
 <?php
+include "../includes/db_con.php";
 
 class response 
 {
     public $status_code = 100;
     public $status_text = "Pending..";
     public $location = "undefined";
-    public $original_name = "Imagen";
+    public $original_name = "Archivo-x";
+    public $id_temp = "undefined";
 }
 
 
@@ -53,17 +55,20 @@ for ($i = 0; $i < $lines; $i++) {
                 $location .= date_format($time, 'YmdHisu');//FOMATO: '[PRE-yyyymmddhhiissuuuuuu]' Año, mes, dia (Nro), hora en formato 24, minutos, segundos, milisegundos en formato de 6 decimales
                 $location .= "." . pathinfo($_FILES['fotos']['name'][$i], PATHINFO_EXTENSION);
 
-                try {
-                    move_uploaded_file($_FILES['fotos']['tmp_name'][$i], "../".$location);
+                if (move_uploaded_file($_FILES['fotos']['tmp_name'][$i], "../".$location)) {
+
+                    $response[$i]->location = $location;
                     $response[$i]->status_code = 200;
                     $response[$i]->status_text = "OK";
-                    $response[$i]->location = $location;
                     $response[$i]->original_name = $_FILES['fotos']['name'][$i];
-                } catch (\Throwable $th) {
+                    $response[$i]->id_temp = date_format($time, 'YmdHisu');
+                } else {
+                    $response[$i]->location = $th;
                     $response[$i]->status_code = 417; //  -- 417 = expectation failed
-                    $response[$i]->status_text = "Hubo un error inesperado al guardar el archivo:<br>417. <b>Expectation failed</b>:  - $th<br>Reintente la carga.";
+                    $response[$i]->status_text = "Hubo un error inesperado al guardar el archivo. Reintente la carga.";
                     $response[$i]->original_name = $_FILES['fotos']['name'][$i];
                 }
+                
             }
         }
     }
@@ -82,6 +87,16 @@ for ($i = 0; $i < $lines; $i++) {
     else
         http_response_code(200); //   -- status: ok
 
+
+    // // Consulta la BD en busca de categorías de imagen.
+    // $res = mysqli_query($link, "SELECT id_categoria, nombre FROM categoria");
+    // $pills = array();
+    // while ($datos = mysqli_fetch_array($res)) {
+    //     $pills[] = [$datos[0], $datos[1]];
+    // }
+
+
     echo json_encode($response);
+    // echo json_encode([$response, $pills]);
     die();
 ?>
