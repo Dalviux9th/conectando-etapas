@@ -12,30 +12,28 @@
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
-    
-    <title>Documentos - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
+    <title>Historia - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
 <body>
 
-    <!--Navbar-->
-    
-    <header class="header">
+<header class="header">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./"><span>EEST Nº2</span></a>
+                <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#extendNav" aria-controls="extendNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="extendNav">
                     <ul class="navbar-nav mb-2 mb-lg-0 p-md-1">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php">Inicio</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./anecdotasFront.php">Anécdotas</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./Front.php">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.php">Inicio</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./anecdotasFront.php">Anécdotas</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./Front.php">Galería</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./historyFront.php">Historia</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./basicFront.php">Ciclo Básico</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./cicloSuperior.php">Ciclo Superior</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./basicFront.php">Ciclo Básico</a></li>
+                        <li class="nav-item" ><a class="nav-link" href="./cicloSuperior.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Más información
@@ -52,28 +50,43 @@
         </nav>
     </header>
 
-    <main class="container mt-5 text-center justify-content-center">
-        <div class="row fs-4">
-            <div class="col-12 col-md-4 offset-md-1" id="insc">
-                <p>¿Querés inscribirte? ¡Descargá e imprimí este documento y llenalo!</p>
+    <main class="container mb-5 mt-5">
+        <h1 class="text-center">Historia de nuestra escuela</h1>
+
+
+        <div class="row mt-5 row-history ">
+            <div class="col-12 col-md-4">
+                <img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid mb-3">
             </div>
-            <div class="col-12 col-md-4 offset-md-1 mt-3">
-                <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="downloadInsc" name="downloadInsc"><i class="fa-solid fa-download fa-bounce" style="color: #005eff;"></i> Descargar Inscripción.</a>
-            </div>
-        </div>
-        <div class="row fs-4 mt-2">
-            <div class="col-12 col-md-4 offset-md-1" id="insc">
-                <p>¿Querés rematricularte? ¡Descargá e imprimí este documento y llenalo!</p>
-            </div>
-            <div class="col-12 col-md-4 offset-md-1 mt-3">
-            <a class="btn btn-outline-primary btn-lg" href="#" role="button" id="downloadMatr" name="downloadMatr"><i class="fa-solid fa-download fa-bounce" style="color: #005eff;"></i> Descargar Matrícula.</a>
+            <div class="col-12 col-md-8 fs-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus exercitationem fugit, voluptates voluptatem modi sed vel unde tempora nihil libero quae assumenda atque culpa officiis cum. Nesciunt rerum voluptas animi. Quod, cumque consequuntur laudantium ab quidem dolore numquam repudiandae labore quis nesciunt maiores iusto quam eaque modi hic error!
             </div>
         </div>
-        <small class="text-muted">Posteriormente, los documentos deberan ser entregados en la institución en época de inscripciones. <br>
-            *Inscripción: este documento es el registro inicial, el cual debe entregarse una sola vez. <br>
-            **Matrícula: es el siguiente paso luego de la inscripción. Se deberá entregar nuevamente al inicio de cada ciclo lectivo.
-        </small>
+<hr>
+        <div class="row mt-3 mb-3 row-history">
+            <div class="col-12 col-md-8 fs-4 mb-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus exercitationem fugit, voluptates voluptatem modi sed vel unde tempora nihil libero quae assumenda atque culpa officiis cum. Nesciunt rerum voluptas animi. Quod, cumque consequuntur laudantium ab quidem dolore numquam repudiandae labore quis nesciunt maiores iusto quam eaque modi hic error!
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-md-3 col-6">
+                <div class="row gap-5">
+                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
+                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
+                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
+                </div>
+            </div>
+            <div class="col-md-6 col-6 fs-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam laudantium praesentium exercitationem corporis id maxime placeat autem, hic fugit modi incidunt! Quos dolorum blanditiis ipsa quidem. Praesentium, optio. Dolorum rerum reprehenderit ad, sunt distinctio, quibusdam a molestias, minus fugit necessitatibus corporis aliquid nam officia? Alias quia earum architecto velit.
+            </div>
+        </div>
     </main>
+
 
     <div class="container-fluid" id="footer">
         <div class="row text-center fs-5" id="footer">

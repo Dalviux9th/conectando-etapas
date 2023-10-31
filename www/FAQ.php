@@ -33,7 +33,7 @@
                         <li class="nav-item" ><a class="nav-link active" href="./Front.php">Galería</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./historyFront.php">Historia</a></li>
                         <li class="nav-item" ><a class="nav-link active" href="./basicFront.php">Ciclo Básico</a></li>
-                        <li class="nav-item" ><a class="nav-link active" href="./superiorFront.php">Ciclo Superior</a></li>
+                        <li class="nav-item" ><a class="nav-link active" href="./cicloSuperior.php">Ciclo Superior</a></li>
                         <li class="nav-item dropdown-center">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                 Más información
