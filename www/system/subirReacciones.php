@@ -3,7 +3,7 @@ include "../includes/db_con.php";
     session_start();
     $id = $_POST["ID"];
     $reaccion = $_POST["reaccion"];
-    if($_SESSION ["reaciones"][$id] != $reaccion){
+    if(empty($_SESSION ["reaciones"][$id]) || $_SESSION ["reaciones"][$id] != $reaccion){
         $json = mysqli_query($link,"SELECT `reacciones` FROM `anecdota` WHERE `id_anec` = $id");
         $datos = mysqli_fetch_assoc($json);
         $clave = json_decode($datos['reacciones'], true);

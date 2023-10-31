@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
+<html id="html"lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body id="body">
 
     <!--Navbar-->
     
@@ -52,16 +52,65 @@
         </nav>
     </header>
 
-    <main>
-        <div id="imagenes"></div>
+    <main class="mt-5">
+        <div class="container">
+            <div id="busquedas">
+                <div class="row" id="barra">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder=""  >
+                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></span>
+                    </div>
+                    </div>
+                    <div class="col-2">
+
+  <button class="btn btn-primary"  id="tres" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"/></svg>
+
+  </button>
+</p>
+                    </div>
+                </div>
+                <div class="row mb-5" id="card">
+                    <div class=" row d-flex justify-content-center">
+                        <div class="col-12 p-3 d-flex flex-wrap">
+                            <?php
+                            include "includes/db_con.php";
+                            
+                            $resultado = mysqli_query($link, "SELECT `id_categoria`, `nombre` FROM `categoria`");
+                            while ($datos = mysqli_fetch_array($resultado)) {
+                            ?>
+                                <input type="checkbox" class="btn-check checkbox" id="btn-check-<?php echo $datos["id_categoria"] ?>" autocomplete="off">
+                                <label class="btn btn-outline-primary col-11 col-md-5 col-xl-3 flex-fill mb-1 mx-1" for="btn-check-<?php echo $datos["id_categoria"] ?>"><?php echo $datos["nombre"] ?></label>
+                            <?php 
+                            }
+                            ?>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-primary w-50  text-center" type="button" id="filtro">filtrar</button>
+                    </div>
+                </div>
+                </div>
+            <div id="imagenes" class="row d-flex justify-content-center"></div>
+            <div id="popUP-walpaper">
+            <div class="position-absolute top-50 start-50 translate-middle row" id="popUp"> 
+                <div class="popup  col-8"> 
+                    <img class="img" src="http://localhost/www/imagenes/trofeos2.jpg" alt="">
+                </div> 
+                <div class="col-4">
+                    <div class="row" >
+                        <div class="col-12"> hola</div>
+                        <div class="col-12"> 2345s</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
     </main>
 
-    <script src="system/ajax.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <div class="container-fluid" id="footer">
         <div class="row text-center fs-5" id="footer">
@@ -89,4 +138,10 @@
     </div>
 
 </body>
+<script src="system/ajax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>
