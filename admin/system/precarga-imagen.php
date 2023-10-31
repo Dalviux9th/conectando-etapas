@@ -88,14 +88,15 @@ for ($i = 0; $i < $lines; $i++) {
         http_response_code(200); //   -- status: ok
 
 
-    // Consulta la BD en busca de categorías de imagen.
-    $res = mysqli_query($link, "SELECT id_categoria, nombre FROM categoria");
-    $pills = array();
-    while ($datos = mysqli_fetch_array($res)) {
-        $pills[] = [$datos[0], $datos[1]];
-    }
+    // // Consulta la BD en busca de categorías de imagen.
+    // $res = mysqli_query($link, "SELECT id_categoria, nombre FROM categoria");
+    // $pills = array();
+    // while ($datos = mysqli_fetch_array($res)) {
+    //     $pills[] = [$datos[0], $datos[1]];
+    // }
 
 
-    echo json_encode([$response, $pills]);
+    echo json_encode($response);
+    // echo json_encode([$response, $pills]);
     die();
 ?>
