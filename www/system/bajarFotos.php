@@ -4,7 +4,7 @@ include "imagen.php";
 
 $id = $_POST["id"];
 if(empty($_POST["where"])){
-    $res = mysqli_query($link,"SELECT `id_img`, `ubicacion` FROM `imagen` WHERE `id_img` > $id LIMIT 28" ); 
+    $res = mysqli_query($link,"SELECT `id_img`, `ubicacion` FROM `imagen` WHERE `id_img` > $id LIMIT 36" ); 
     $jsonImg = array();
 }else{
     $where = $_POST["where"];
@@ -13,7 +13,7 @@ if(empty($_POST["where"])){
         LEFT JOIN `tiene_categoria` ON `tiene_categoria`.`id_imagen` = `imagen`.`id_img`
         WHERE $where  AND imagen.id_img > $id
         GROUP BY id_imagen
-        LIMIT 20");
+        LIMIT 36");
 }
 while ($datos = mysqli_fetch_array($res)) {
     $img = new imagen($datos[0],$datos[1]);
