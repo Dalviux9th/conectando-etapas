@@ -19,13 +19,14 @@ window.addEventListener("scroll", () => {
       if(event.target.classList.contains("checkbox")){
         let id = event.target.id;
         id = id.substring(id.lastIndexOf("-")+1)
+        console.log("id: " ,id)
         if(where.includes(id)){
           where = where.replace(` OR tiene_categoria.id_categoria = ${id}`, " ");
           console.log(where)
         }else{
         where +=` OR tiene_categoria.id_categoria = ${id}`
-        console.log(where.length)
         }
+        console.log(where.length)
       }
     })
 
@@ -56,16 +57,10 @@ function buscraImg() {
     let data = new FormData
     data.append('pass', '1234');
     data.append('id', id);
-    if(where.length > 1 ){
-      where = where.substring(where.indexOf("R")+1)
-      
-      data.append('tipo', 2);
-      data.append('where', where);
-      console.log(id)
-    }else{
-    data.append('tipo', 1);
+    if(where.length > 0 && where.includes("tiene_categoria")){
+      consulta = where.substring(where.indexOf("R")+1)
+      data.append('where', consulta);
     }
-
     fetch('http://localhost/www/system/bajarFotos.php',{
       method: "POST",
       body: data

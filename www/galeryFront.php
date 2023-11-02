@@ -82,7 +82,7 @@
                             while ($datos = mysqli_fetch_array($resultado)) {
                             ?>
                                 <input type="checkbox" class="btn-check checkbox" id="btn-check-<?php echo $datos["id_categoria"] ?>" autocomplete="off">
-                                <label class="btn btn-outline-primary col-11 col-md-5 col-xl-3 flex-fill mb-1 mx-1" for="btn-check-<?php echo $datos["id_categoria"] ?>"><?php echo $datos["nombre"] ?></label>
+                                <label class="btn btn-outline-primary col-5 col-md-3 col-xl-2 flex-fill mb-1 mx-1" for="btn-check-<?php echo $datos["id_categoria"] ?>"><?php echo $datos["nombre"] ?></label>
                             <?php 
                             }
                             ?>
