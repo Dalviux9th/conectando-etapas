@@ -141,7 +141,7 @@ formPrecarga.fotos.addEventListener(
                             </div>
 
                             <div class="mb-3" id="">
-                            
+                            <input class="btn btn-primary" type="submit" value="Subir">
 
 
                             </div>
@@ -149,13 +149,13 @@ formPrecarga.fotos.addEventListener(
                             
                             <div class="mb-3">`;
 
-                            element.pills.forEach((categoria) => {
+                            // element.pills.forEach((categoria) => {
 
-                                display.innerHTML += `
-                                    <label for="etiqueta-${element.location}-${categoria[0]}" class="form-label">${categoria[1]}</label>
-                                    <input class="d-none" type="checkbox" id="etiqueta-${element.location}-${categoria[0]}" value="${categoria[1]}">
-                                `
-                            })
+                            //     display.innerHTML += `
+                            //         <label for="etiqueta-${element.location}-${categoria[0]}" class="form-label">${categoria[1]}</label>
+                            //         <input class="d-none" type="checkbox" id="etiqueta-${element.location}-${categoria[0]}" value="${categoria[1]}">
+                            //     `
+                            // })
                             
                             
 
