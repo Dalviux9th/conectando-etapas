@@ -23,7 +23,7 @@ header {
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     display: grid;
-    grid-template-rows: 70px auto 70px;
+    grid-template-rows: 70px auto 100px;
 }
