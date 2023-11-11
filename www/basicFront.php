@@ -51,45 +51,51 @@
     </header>
 
     <main class="container mb-5 ">
-        <h1 class="text-center mt-5 mb-5">Ciclo Básico</h1>
-    <div class="row">
-        <div class="col-4">
-        <div class="card text-center">
-        <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
-            <div class="card-body">
-                <h2 class="card-title">Primer año</h2>
-                <h4 class="card-title">Información</h4>
-                <p class="card-text fs-5">El primer año de la Educación Secundaria Técnica consta de formación general y formación científico tecnológica, y se divide en 8 materias: Ciencias Naturales, Ciencias Sociales, Educación Artística, Educación Física, Inglés, Matemática, Prácticas del Lenguaje y Construcción Ciudadana. La cantidad total de módulos semanales en el primer año es de 24.</p>
-                <h4 class="card-title">Talleres</h4>
-                <p class="card-text fs-5">Dentro de la formación científico-tecnológica se dictan tres materias: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, cada una con una carga horaria anual de 72 horas, y con 6 módulos semanales</p>
+        <div class="row">
+            <h1 class="col-12 text-center mt-5 mb-5">Ciclo Básico</h1>
+            <div class="col-12 text-center fs-5">
+                <p>El ciclo basico técnico tiene una duracion de tres años y tiene una Formación Técnica Específica la cual esta comprendida por los saberes del mundo del trabajo, el conocimiento del sistema socio-productivo local, la formacion ciudadana y la adquisicion de saberes en lo que respecta a la produccion de conocimientos cientificos y tecnologicos.</p>
+                <p>Una de las características principales de la Formación Específica en el ciclo Básico es favorecer el desarrollo de capacidades que resultarán necesarias en las diferentes tecnicaturas que el alumno pueda elegir en el ciclo superior.</p>
             </div>
         </div>
-        </div>
+        
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-center">
+                    <img class="card-img-top p-0 m-0" src="imagenes/automotores.jpg" alt="404. Oops, algo salio mal..">
+                    <div class="card-body">
+                        <h2 class="card-title">Primer año</h2>
+                        <h4 class="card-title">Información</h4>
+                        <p class="card-text fs-5">El primer año de la Educación Secundaria Técnica consta de formación general y formación científico tecnológica, y se divide en 8 materias: Ciencias Naturales, Ciencias Sociales, Educación Artística, Educación Física, Inglés, Matemática, Prácticas del Lenguaje y Construcción Ciudadana. La cantidad total de módulos semanales en el primer año es de 24.</p>
+                        <h4 class="card-title">Talleres</h4>
+                        <p class="card-text fs-5">Dentro de la formación científico-tecnológica se dictan tres materias: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, cada una con una carga horaria anual de 72 horas, y con 6 módulos semanales</p>
+                    </div>
+                </div>
+            </div>
         <div class="col-4">
-        <div class="card text-center">
-        <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+            <div class="card text-center">
+                <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
                 <div class="card-body">
-                <h2 class="card-title">Segundo año</h2>
-                <h4 class="card-title">Información</h4>
-                <p class="card-text fs-5">El segundo año de la Educación Secundaria Técnica incluye ocho asignaturas en el área de Formación General, con cuatro módulos semanales cada una, con materias como Biología, Construcción de Ciudadanía, Educación Artística, Educación Física, Físico Química, Geografía, Historia, Matemática, Prácticas del Lenguaje, e Inglés. La cantidad total de módulos semanales del segundo año es de 24.</p>
-                <h4 class="card-title">Talleres</h4>
-                <p class="card-text fs-5">El segundo año de la Educación Secundaria Técnica incluye tres materias técnico-específicas: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, con un total de ocho módulos semanales. Procedimientos Técnicos se vuelve el área con más horas con 144, el resto de materias continua con 72 horas.</p>
+                    <h2 class="card-title">Segundo año</h2>
+                    <h4 class="card-title">Información</h4>
+                    <p class="card-text fs-5">El segundo año de la Educación Secundaria Técnica incluye ocho asignaturas en el área de Formación General, con cuatro módulos semanales cada una, con materias como Biología, Construcción de Ciudadanía, Educación Artística, Educación Física, Físico Química, Geografía, Historia, Matemática, Prácticas del Lenguaje, e Inglés. La cantidad total de módulos semanales del segundo año es de 24.</p>
+                    <h4 class="card-title">Talleres</h4>
+                    <p class="card-text fs-5">El segundo año de la Educación Secundaria Técnica incluye tres materias técnico-específicas: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, con un total de ocho módulos semanales. Procedimientos Técnicos se vuelve el área con más horas con 144, el resto de materias continua con 72 horas.</p>
+                </div>
             </div>
-        </div>
         </div>
         <div class="col-4">
-        <div class="card text-center">
-        <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+            <div class="card text-center">
+                <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
                 <div class="card-body">
-                <h2 class="card-title">Tercer año</h2>
-                <h4 class="card-title">Información</h4>
-                <p class="card-text fs-5">El tercer año de la Educación Secundaria Técnica incluye ocho asignaturas en el área de Formación General, con cuatro módulos semanales cada una, con materias como Biología, Construcción de Ciudadanía, Educación Artística, Educación Física, Físico Química, Geografía, Historia, Inglés, Matemática, y Prácticas del Lenguaje.</p>
-                <h4 class="card-title">Talleres</h4>
-                <p class="card-text fs-5">Dentro de la formación científico-tecnológica se repiten las tres materias: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, en este año Sistemas Tecnológicos se amplía con 144 horas anuales, el resto se mantiene en 72. La cantidad total de módulos semanales es de 8.</p>
+                    <h2 class="card-title">Tercer año</h2>
+                    <h4 class="card-title">Información</h4>
+                    <p class="card-text fs-5">El tercer año de la Educación Secundaria Técnica incluye ocho asignaturas en el área de Formación General, con cuatro módulos semanales cada una, con materias como Biología, Construcción de Ciudadanía, Educación Artística, Educación Física, Físico Química, Geografía, Historia, Inglés, Matemática, y Prácticas del Lenguaje.</p>
+                    <h4 class="card-title">Talleres</h4>
+                    <p class="card-text fs-5">Dentro de la formación científico-tecnológica se repiten las tres materias: Procedimientos Técnicos, Lenguajes Tecnológicos y Sistemas Tecnológicos, en este año Sistemas Tecnológicos se amplía con 144 horas anuales, el resto se mantiene en 72. La cantidad total de módulos semanales es de 8.</p>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
     </main>
 
 

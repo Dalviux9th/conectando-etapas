@@ -22,7 +22,7 @@
     <!--Navbar-->
     
     <header class="header">
-        <img src="sources/images/EESTN2.jpg" alt="" class="bg-image">
+        <img src="sources/images/EESTN2.png" alt="" class="bg-image">
         <nav class="navbar navbar-expand-lg p-4 fixed-top" id="menu">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.php"><span>EEST Nº2</span><img src="sources/images/logo_trans.png" alt="" class="img-header"></a>
