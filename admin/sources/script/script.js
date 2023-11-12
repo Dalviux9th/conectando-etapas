@@ -52,6 +52,7 @@ formPrecarga.fotos.addEventListener(
             console.log(response);
         } catch (error) {
             console.log("ERROR: " + error + " - " + request.response);
+            display.innerHTML = "ERROR: " + error + " - " + request.response;
         }
 
         switch (request.status) {// Mensajes de status
@@ -90,7 +91,7 @@ formPrecarga.fotos.addEventListener(
 
         stateDisplay.scrollIntoView();
 
-        response.forEach(element => {// Imprime los que están bien.
+        response.response.forEach(element => {// Imprime los que están bien.
             if (element.status_code > 400){
 
                 display.innerHTML +=
@@ -109,9 +110,10 @@ formPrecarga.fotos.addEventListener(
                 display.innerHTML +=
                 `<div class="col-12 imgCard card mb-3 pt-2" id="${element.id_temp}">
                     <div class="card-header bg-transparent cardTitle">
-                        <h4>${element.original_name}</h4>
+                        <h4 class="text-truncate">${element.original_name}</h4>
                         <svg
-                            onclick="trash(${element.id_temp})"
+                            class="trashBtn"
+                            onclick="trash('${element.id_temp}')"
                             style="fill: var(--bs-dark);"
                             xmlns="http://www.w3.org/2000/svg"
                             height="1.6em" viewBox="0 0 448 512"
@@ -126,46 +128,55 @@ formPrecarga.fotos.addEventListener(
                         </div>
 
                         <div class="col-12 col-md-7">
-                        <form id="form-${element.id_temp}">
+                        <form id="form-${element.id_temp}" action="" method="post">
                             <input type="hidden" name="direccion" value="${element.location}">
                             <h5 class="form-title mt-5 mt-md-0">Inserte los datos alusivos a la imágen</h5>
 
                             <div class="mb-3">
-                                <label for="fecha" class="form-label">fecha</label>
-                                <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Introduzca la fecha aproximada." required>
+                                <label for="fecha-${element.id_temp}" class="form-label">Fecha</label>
+                                <input type="text" class="form-control" name="fecha-${element.id_temp}" id="fecha-${element.id_temp}" placeholder="Introduzca la fecha aproximada." required>
                             </div>
 
                             <div class="mb-3">
-                                <label for="descripcion" class="form-label">Descripción (opcional)</label>
-                                <textarea class="form-control" id="descripcion" name="decripcion" rows="3"></textarea>
+                                <label for="titulo-${element.id_temp}" class="form-label">Título para la imagen (opcional)</label>
+                                <input type="text" class="form-control" id="titulo-${element.id_temp}" name="titulo-${element.id_temp}" placeholder="Frase corta que defina la imágen.">
                             </div>
 
-                            <div class="mb-3" id="">
-                            
-
-
+                            <div class="mb-3">
+                                <label for="descripcion-${element.id_temp}" class="form-label">Descripción (opcional)</label>
+                                <textarea class="form-control" id="descripcion-${element.id_temp}" name="decripcion-${element.id_temp}" rows="3" placeholder="Ej. Un recuerdo de la 5a edición de ExpoTécnica. Podemos apreciar los preparativos para la feria."></textarea>
                             </div>
 
-                            
-                            <div class="mb-3">`;
+                            <div class="mb-3">
+                                <label class="form-label">Categorías (seleccione varias)</label>
+                                <div class="contCategorias row justify-content-around mb-3 " id="contCategorias-${element.id_temp}"></div>
+                            </div>
 
-                            element.pills.forEach((categoria) => {
+                            <div class="mb-3 row justify-content-center">
+                            <button type="submit" class="btn btn-primary col-10 col-sm-8 col-md-6 col-lg-4">Subir imágen</button>
+                            </div>
 
-                                display.innerHTML += `
-                                    <label for="etiqueta-${element.location}-${categoria[0]}" class="form-label">${categoria[1]}</label>
-                                    <input class="d-none" type="checkbox" id="etiqueta-${element.location}-${categoria[0]}" value="${categoria[1]}">
-                                `
-                            })
-                            
-                            
-
-                            `</div>
-
-                            <button type="submit" class="btn btn-primary">Subir</button>
                         </form>
                         </div>
                     </div>
                 </div>`;
+
+                response.pills.forEach(categoria => {
+                    document.getElementById(`contCategorias-${element.id_temp}`).innerHTML +=
+                    `<input
+                        type="checkbox"
+                        id="${categoria.nombre}-${element.id_temp}"
+                        name="${categoria.nombre}-${element.id_temp}"
+                    >
+                    <label
+                        class="badge rounded-pill col-auto mb-1"
+                        for="${categoria.nombre}-${element.id_temp}"
+                        title="${categoria.descripcion}"
+                    >
+                        ${categoria.nombre}
+                    </label>
+                    `;
+                })
 
             }
         });
@@ -202,3 +213,7 @@ event.preventDefault();//Evita la recarga de la página.
 },
 false,
 );
+
+function trash(id){
+    document.getElementById(id).remove();
+}

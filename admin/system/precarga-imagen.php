@@ -1,6 +1,12 @@
 <?php
 include "../includes/db_con.php";
 
+class final_res
+{
+    public $pills;
+    public $response;
+}
+
 class response 
 {
     public $status_code = 100;
@@ -88,15 +94,17 @@ for ($i = 0; $i < $lines; $i++) {
         http_response_code(200); //   -- status: ok
 
 
-    // // Consulta la BD en busca de categorías de imagen.
-    // $res = mysqli_query($link, "SELECT id_categoria, nombre FROM categoria");
-    // $pills = array();
-    // while ($datos = mysqli_fetch_array($res)) {
-    //     $pills[] = [$datos[0], $datos[1]];
-    // }
+    // Consulta la BD en busca de categorías de imagen.
+    $res = mysqli_query($link, "SELECT id_categoria, nombre, descripcion FROM categoria");
+    $pills = array();
+    for ($i = 0; $i < mysqli_num_rows($res); $i++){
+        $pills[$i] = mysqli_fetch_assoc($res);
+    }
 
+        $final_response = new final_res();
+        $final_response->pills = $pills;
+        $final_response->response = $response;
 
-    echo json_encode($response);
-    // echo json_encode([$response, $pills]);
+    echo json_encode($final_response);
     die();
 ?>
