@@ -1,3 +1,9 @@
+<?php
+session_start();
+unset($_SESSION['busqueda']);
+unset($_SESSION['filtro']);
+unset($_SESSION['flag']);
+?>
 <!DOCTYPE html>
 <html id="html"lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
 <head>
@@ -59,8 +65,9 @@
                     <div class="col-2"></div>
                     <div class="col-8">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder=""  >
-                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></span>
+                        <input type="text" class="form-control border border-end-0" id="busqueda" placeholder="Buscar..."  >
+                        <button class="btn border border-start-0 " id="borrarBusqueda"type="button">X</button>
+                        <button class="btn border" type="button" id="Buscar"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></button>
                     </div>
                     </div>
                     <div class="col-2">
@@ -81,32 +88,37 @@
                             $resultado = mysqli_query($link, "SELECT `id_categoria`, `nombre` FROM `categoria`");
                             while ($datos = mysqli_fetch_array($resultado)) {
                             ?>
-                                <input type="checkbox" class="btn-check checkbox" id="btn-check-<?php echo $datos["id_categoria"] ?>" autocomplete="off">
-                                <label class="btn btn-outline-primary col-5 col-md-3 col-xl-2 flex-fill mb-1 mx-1" for="btn-check-<?php echo $datos["id_categoria"] ?>"><?php echo $datos["nombre"] ?></label>
+                                <input type="checkbox" class="btn-check checkbox cat-check" id="btn-check-<?php echo $datos["id_categoria"] ?>" autocomplete="off">
+                                <label class="badge rounded-pill col-auto ms-1 mb-1 cat-label" for="btn-check-<?php echo $datos["id_categoria"] ?>"><?php echo $datos["nombre"] ?></label>
                             <?php 
                             }
                             ?>
                         </div>
-                        <div class="col-12 d-flex justify-content-center">
-                        <button class="btn btn-primary w-50  text-center" type="button" id="filtro">filtrar</button>
-                    </div>
                 </div>
                 </div>
+            
+            <div class="row d-flex justify-content-center my-2" id="recomendados">
+                <div class="col-12"> Recomendados</div>
+                <div class="col-12" id="masCat"></div>
+            </div>
+            </div>
             <div id="imagenes" class="row d-flex justify-content-center"></div>
-            <div id="popUP-walpaper">
-            <div class="position-absolute top-50 start-50 translate-middle row" id="popUp"> 
-                <div class="popup  col-8"> 
-                    <img class="img" src="http://localhost/www/imagenes/trofeos2.jpg" alt="">
-                </div> 
-                <div class="col-4">
-                    <div class="row" >
-                        <div class="col-12"> hola</div>
-                        <div class="col-12"> 2345s</div>
-                    </div>
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center align-items-center position-fixed top-0 start-0" id="modal-container">
+        <div class="px-2 py-2  p-3 rounded position-relative" id="modal">
+            <div class="btn   position-absolute top-0 end-0" id="cerrar_modal">X</div>
+                <div class="row m-2  border-bottom">
+                <div class="col-12 fs-4 text-center" id="titulo-modal"></div>
+                </div>
+                <div class="row">
+                <div class="col-md-7 col-12 d-flex justify-content-center border-end" id="container-img-modal"> <img class="rounded" id="img-modal" src="" alt="imagen"></div>
+                <div class="col-md-5 col-12 overflow-auto" id="texto-modal">
+                </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
         </div>
     </main>
 
