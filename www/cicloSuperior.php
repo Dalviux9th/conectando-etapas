@@ -51,52 +51,55 @@
     </header>
 
 <main class="container-fluid mt-5">
-        <div class="row">
-            <h1 class="d-flex justify-content-center mb-3">Ciclo Superior</h1>
-            <p class="text-center fs-5">El ciclo superior tiene una duracion de cuatro años y posee la modalidad de Educación Técnico Profesional en donde se definen las tecnicaturas que se mostraran mas abajo. Cada una de estas orientaciones posee una Formacion cientifico-tecnologica, la cual tiene que ver con diferentes saberes que otorgan conocimientos, habilidades, destrezas y valores. Esta organizada en modulos y su funcion es comprender, integrar y profundizar los contenidos que introducen a los aspectos específicos de cada especialidad.</p>
+    <div class="row">
+        <h1 class="col-12 d-flex justify-content-center mb-3">Ciclo Superior</h1>
+        <div class="col-12 text-center fs-5">
+
+            <p>El ciclo superior tiene una duracion de cuatro años y posee la modalidad de Educación Técnico Profesional en donde se definen las tecnicaturas que se mostraran mas abajo.</p>
+            <p>Cada una de estas orientaciones posee una Formacion cientifico-tecnologica, la cual tiene que ver con diferentes saberes que otorgan conocimientos, habilidades, destrezas y valores. Esta organizada en modulos y su funcion es comprender, integrar y profundizar los contenidos que introducen a los aspectos específicos de cada especialidad.</p>
         </div>
 
-        <div class="row d-flex">
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                 <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Cuarto Año</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                 <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Quinto Año</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                 <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Sexto Año</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-3 d-flex justify-content-center">
+    <div class="row d-flex">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
                 <div class="card">
-                    <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title text-center">Séptimo Año</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+                <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Cuarto Año</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
+
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="card">
+                <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Quinto Año</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="card">
+                <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Sexto Año</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="card">
+                <img src="imagenes/automotores.jpg" class="card-img-top p-0 m-0" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Séptimo Año</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <hr>
 

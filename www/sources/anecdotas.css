@@ -1,3 +1,4 @@
+/* reacciones */
 svg{
   width: 100%;
   height: 100%;
@@ -8,7 +9,11 @@ svg{
   height: 20px;
 }
 
-.selected {
+.reaccines input{
+  display: none;
+}
+
+.reaccines input:checked + label{
   fill:#0080FE
 
 }
