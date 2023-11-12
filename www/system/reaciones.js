@@ -1,17 +1,15 @@
-window.addEventListener("click", (event)=>{
-    let element = event.target.parentNode.parentNode.parentNode
-if (element.classList.contains("Reaccion")){
-    console.log(element.id)
-    let reaccion = element.id
-
-    reaccion = reaccion.substring(reaccion.indexOf("-")+1)
-    console.log(reaccion)
-    mandarreacionsDB( element.parentNode.id, reaccion, event )
+document.getElementById("anec").addEventListener("click", (event)=>{
+    let element = event.target.parentNode
+if (element.classList.contains("reaccionar")){
+    let elementID = element.id
+    reaccion = elementID .substring(0, elementID .indexOf("-"))
+    id = elementID .substring(elementID .indexOf("-")+1)
+    mandarreacionsDB(id , reaccion)
 }
 })
 
 // llamada a la DB para manipulacion de datos
-function mandarreacionsDB(id, reaccion, event){
+function mandarreacionsDB(id, reaccion){
     let formData = new FormData
     formData.append("ID", id);
     formData.append("reaccion", reaccion)
@@ -22,17 +20,16 @@ function mandarreacionsDB(id, reaccion, event){
     .then(res => res.json())
     .then(res => {
         if (res["result"] == "success"){
-
-            event.target.parentNode.classList.add("selected")
-            let numReac = parseInt(document.getElementById(`number-${reaccion}-${id}`).innerHTML)
-            document.getElementById(`number-${reaccion}-${id}`).innerHTML = numReac+1
+            let reac = document.getElementById(`number-${reaccion}-${id}`)
+            let numReac = parseInt(reac.innerHTML)
+            reac.innerHTML = numReac + 1;
 
             if(res["oldReac"] != null){
-                console.log(res["oldReac"],  document.getElementById(`${id}-${res["oldReac"]}`))
-                document.getElementById(`${id}-${res["oldReac"]}`).firstElementChild.firstElementChild.classList.remove("selected")
-                let numReac = parseInt(document.getElementById(`number-${res["oldReac"]}-${id}`).innerHTML)
-                document.getElementById(`number-${res["oldReac"]}-${id}`).innerHTML = numReac-1
+                let oldReac = document.getElementById(`number-${res["oldReac"]}-${id}`)
+                let numOldReac = parseInt(oldReac.innerHTML)
+                oldReac.innerHTML = numOldReac-1
             }
         }
     })
 }
+
