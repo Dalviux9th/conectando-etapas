@@ -13,6 +13,14 @@ svg{
 
 }
 
+.anecCont{
+  background-image: url(../sources/images/anecFondo4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-size: larger;
+}
+
 body {
     font-family: Cantarell;
     overflow-x: hidden;
@@ -37,7 +45,12 @@ body {
     color: #000 !important;
 }
 
+/* Esto controla las cards de las anecdotas hardcodeadas.*/
 
+#anecDiv{
+  background-image: url(../sources/images/anecFondo.jpg);
+  height: 150px;
+}
 
 nav{
     color: white !important;
