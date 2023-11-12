@@ -172,5 +172,16 @@ width: 100vw;
 .cat-label{
     background-color: var(--bs-secondary);
     color: var(--bs-light);
+    transition: 0.3s;
     cursor: pointer;
+}
+
+.filtros input:checked + .cat-label{
+    background-color: var(--bs-primary);
+    transition: 0.3s;
+}
+
+.filtros label.badge:active{
+    outline: 3px solid orangered;
+    box-sizing: border-box ;
 }

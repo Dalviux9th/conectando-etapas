@@ -81,7 +81,8 @@ unset($_SESSION['flag']);
                 </div>
                 <div class="row mb-5" id="card">
                     <div class=" row d-flex justify-content-center">
-                        <div class="col-12 p-3 d-flex flex-wrap">
+
+                        <div class="col-8 p-3  filtros">
                             <?php
                             include "includes/db_con.php";
                             
@@ -96,10 +97,11 @@ unset($_SESSION['flag']);
                         </div>
                 </div>
                 </div>
-            
+                <div id="recomendados">
             <div class="row d-flex justify-content-center my-2" id="recomendados">
                 <div class="col-12"> Recomendados</div>
-                <div class="col-12" id="masCat"></div>
+                <div class="col-12 filtros" id="masCat"></div>
+            </div>
             </div>
             </div>
             <div id="imagenes" class="row d-flex justify-content-center"></div>

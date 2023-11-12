@@ -75,6 +75,7 @@ document.getElementById("cerrar_modal").addEventListener("click", ()=>{
   document.getElementById("img-modal").src = ""
   document.getElementById("titulo-modal").innerHTML = "";
 document.getElementById("texto-modal").innerHTML = ""
+document.getElementById("recomendados").style.display = "none";
 
 })
 
@@ -128,12 +129,13 @@ function buscraImg(tipo = null, busqueda = null,) {
       }
 
       if (res[1] != null) {
-        let eleCat = document.createElement("div");
+        let eleCat = document.createElement("div")
         for (const cat of res[1]) {
-          eleCat.innerHTML += `<input type="checkbox" class="btn-check checkbox" id="btn-check-${cat.ID}" autocomplete="off">
-          <label class="btn btn-outline-primary col-5 col-md-3 col-xl-2 flex-fill mb-1 mx-1" for="btn-check-${cat.ID}">${cat.Direccion}</label>
+          eleCat.innerHTML += `<input type="checkbox" class="btn-check checkbox cat-check" id="btn-check-${cat.ID}" autocomplete="off">
+          <label class="badge rounded-pill col-auto ms-1 mb-1 cat-label" for="btn-check-${cat.ID}">${cat.Direccion}</label>
       `
         }
+        document.getElementById("recomendados").style.display = "block";
         document.getElementById("masCat").appendChild(eleCat);
       }
 
