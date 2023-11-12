@@ -116,6 +116,8 @@ include "includes/head_settings.php"
         </div>
     </div><!-- Contenedor de consultas (fin) -->
 
+</main>
+
 <?php
 
 include "includes/footer.php";

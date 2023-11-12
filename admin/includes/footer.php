@@ -1,4 +1,3 @@
-    </main>
     
     <footer class="row justify-content-evenly align-content-center bg-dark text-light mb-0">
         <div class="col-auto">By Conectando Etapas 2023</div>
