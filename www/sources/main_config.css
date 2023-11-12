@@ -101,7 +101,10 @@ header, nav{
     footer p {
         display: none;
     }
+
+
 }
+
 
 footer p {
     color: white;
@@ -136,6 +139,19 @@ footer p {
     z-index: 10;
     background-color: #FFF;
     
+}
+
+.font-left, .font-right{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .font-left{
+        text-align: left;
+    }
+    .font-right{
+        text-align: right;
+    }
 }
 
 #card{
