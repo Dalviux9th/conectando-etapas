@@ -1,5 +1,12 @@
 <?php
-include "../includes/db_con.php";
+
+/* Este archivo esta dedicado a la precarga de imaegenes. */
+/* Recibe datos desde subir-imagen.php mediante un XHTTPRequest */
+/* Procesa la imagen y la guarda en la carpeta "uploads". */
+/* Devuelve los datos relacionados para la generacion de tarjetas de subida de vuelta en el archivo de origen. */
+
+
+include "../includes/db_con.php";//Conexión a la base de datos.
 
 class final_res
 {
@@ -57,11 +64,11 @@ for ($i = 0; $i < $lines; $i++) {
 
                 $time = date_create("now", timezone_open('America/Argentina/Buenos_Aires'));
                 
-                $location = "uploads/PRE-";
+                $location = "PRE-";
                 $location .= date_format($time, 'YmdHisu');//FOMATO: '[PRE-yyyymmddhhiissuuuuuu]' Año, mes, dia (Nro), hora en formato 24, minutos, segundos, milisegundos en formato de 6 decimales
                 $location .= "." . pathinfo($_FILES['fotos']['name'][$i], PATHINFO_EXTENSION);
 
-                if (move_uploaded_file($_FILES['fotos']['tmp_name'][$i], "../".$location)) {
+                if (move_uploaded_file($_FILES['fotos']['tmp_name'][$i], "../uploads/".$location)) {
 
                     $response[$i]->location = $location;
                     $response[$i]->status_code = 200;

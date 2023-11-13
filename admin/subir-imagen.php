@@ -100,5 +100,5 @@
 
 </main>
 
-
+<script src="sources/script/subir-imagen.js"></script>
 <?php include "includes/footer.php"; ?>

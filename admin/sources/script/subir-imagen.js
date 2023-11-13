@@ -3,20 +3,11 @@ const formPrecarga = document.forms.namedItem("fileUpload");
 const display = document.querySelector("#Display");
 const stateDisplay = document.querySelector("#StateDisplay");
 const btnUpload = document.querySelector("#btnUpload");
+const formsubida = document.querySelectorAll("form");
 
 
 
-//EVENTOS
-
-// -- Cerrar formulario
-document.querySelectorAll('.close-icon')
-.forEach(element => {
-    element.addEventListener('click', (event) => {
-    console.log(event);
-    element.closest('.card').fadeOut();
-  })
-});
-
+// EVENTOS ----------------
 
 
 // -- Movimiento del boton de subida
@@ -32,6 +23,8 @@ btnUpload.addEventListener(
     btnUpload.classList.remove("fa-beat");
 });
 
+// FIN EVENTOS ------------
+
 
 
 // -- Precarga de imagen
@@ -45,7 +38,7 @@ formPrecarga.fotos.addEventListener(
     const request = new XMLHttpRequest();
 
     request.onload = (progress) => {// Función al regresar del request.
-        console.log(`REQUEST: ${request.status} - ${request.statusText}.`);//${response.status_code}: ${response.status_text}
+        console.log(`REQUEST (precarga): ${request.status} - ${request.statusText}.`);
         let response;
         try {
             response = JSON.parse(request.response);
@@ -55,7 +48,7 @@ formPrecarga.fotos.addEventListener(
             display.innerHTML = "ERROR: " + error + " - " + request.response;
         }
 
-        switch (request.status) {// Mensajes de status
+        switch (request.status) {// Mensajes de status (van en el contenedor de estado - alert en la parte superior)
             case 200:
                 stateDisplay.innerHTML = `
                     <div class="alert alert-success alert-dismissible fade show">
@@ -89,13 +82,13 @@ formPrecarga.fotos.addEventListener(
                 break;
         }
 
-        stateDisplay.scrollIntoView();
+        stateDisplay.scrollIntoView();// Hace un scroll hasta el contenedor de estado (alert en la parte superior)
 
         response.response.forEach(element => {// Imprime los que están bien.
             if (element.status_code > 400){
 
                 display.innerHTML +=
-                `<div class="redCard card alert alert-dismissible col-12 mb-3" id="${element.location}-card">
+                `<div class="redCard card alert alert-dismissible col-12 mb-3" id="${element.id_temp}-card">
                     <div class="card-header bg-transparent">
                         <h4>${element.original_name}<h4>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -107,6 +100,7 @@ formPrecarga.fotos.addEventListener(
 
             } else {
 
+                /* -- Agrega la card con la imagen y su formulario adjunto -- */
                 display.innerHTML +=
                 `<div class="col-12 imgCard card mb-3 pt-2" id="${element.id_temp}">
                     <div class="card-header bg-transparent cardTitle">
@@ -124,7 +118,7 @@ formPrecarga.fotos.addEventListener(
                     <div class="row imgCardContent card-body">
 
                         <div class="imgContainer col-12 col-md-5 p-0 bg-secondary border border-dark rounded-2">
-                            <img src="${element.location}" alt="404. Imagen no encontrada.">
+                            <img src="uploads/${element.location}" alt="404. Imagen no encontrada.">
                         </div>
 
                         <div class="col-12 col-md-7">
@@ -134,17 +128,17 @@ formPrecarga.fotos.addEventListener(
 
                             <div class="mb-3">
                                 <label for="fecha-${element.id_temp}" class="form-label">Fecha</label>
-                                <input type="text" class="form-control" name="fecha-${element.id_temp}" id="fecha-${element.id_temp}" placeholder="Introduzca la fecha aproximada." required>
+                                <input type="text" class="form-control" id="fecha-${element.id_temp}" name="fecha" placeholder="Introduzca la fecha aproximada." required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="titulo-${element.id_temp}" class="form-label">Título para la imagen (opcional)</label>
-                                <input type="text" class="form-control" id="titulo-${element.id_temp}" name="titulo-${element.id_temp}" placeholder="Frase corta que defina la imágen.">
+                                <input type="text" class="form-control" id="titulo-${element.id_temp}" name="titulo" placeholder="Frase corta que defina la imágen.">
                             </div>
 
                             <div class="mb-3">
                                 <label for="descripcion-${element.id_temp}" class="form-label">Descripción (opcional)</label>
-                                <textarea class="form-control" id="descripcion-${element.id_temp}" name="decripcion-${element.id_temp}" rows="3" placeholder="Ej. Un recuerdo de la 5a edición de ExpoTécnica. Podemos apreciar los preparativos para la feria."></textarea>
+                                <textarea class="form-control" id="descripcion-${element.id_temp}" name="decripcion" rows="3" placeholder="Ej. Un recuerdo de la 5a edición de ExpoTécnica. Podemos apreciar los preparativos para la feria."></textarea>
                             </div>
 
                             <div class="mb-3">
@@ -153,7 +147,7 @@ formPrecarga.fotos.addEventListener(
                             </div>
 
                             <div class="mb-3 row justify-content-center">
-                            <button type="submit" class="btn btn-primary col-10 col-sm-8 col-md-6 col-lg-4">Subir imágen</button>
+                            <div class="img-submit btn btn-primary col-10 col-sm-8 col-md-6 col-lg-4" value="${element.id_temp}">Subir imágen</div>
                             </div>
 
                         </form>
@@ -161,12 +155,14 @@ formPrecarga.fotos.addEventListener(
                     </div>
                 </div>`;
 
+                /* -- Rellena el contenedor de categorias con sus etiquetas (igual para cada imagen) -- */
                 response.pills.forEach(categoria => {
                     document.getElementById(`contCategorias-${element.id_temp}`).innerHTML +=
                     `<input
                         type="checkbox"
                         id="${categoria.nombre}-${element.id_temp}"
-                        name="${categoria.nombre}-${element.id_temp}"
+                        name="CATEGORIA[]"
+                        value="${categoria.id_categoria}"
                     >
                     <label
                         class="badge rounded-pill col-auto mb-1"
@@ -181,39 +177,59 @@ formPrecarga.fotos.addEventListener(
             }
         });
 
+    cargarevemtos();
     };
 
     request.open("POST", "system/precarga-imagen.php", true);
     request.send(formData);
-    event.preventDefault();//Evita la recarga de la página.
+    event.preventDefault();// Evita la recarga de la página.
 },
 false,
 );
 
 
 
-// -- Cargar imagen
-formsubida.addEventListener(
-    "submit",
-    (event) => {
-        const formData = new FormData(formPrecarga);
-    
-        formData.append("fotos", fotos.files);
-    
-        const request = new XMLHttpRequest();
-    
-        request.onload = (progress) => {// Función al regresar del request.
-        
-        
-        };
-    
-request.open("POST", "system/precarga-imagen.php", true);
-request.send(formData);
-event.preventDefault();//Evita la recarga de la página.
-},
-false,
-);
+// -- Evento escucha el envío de los formularios de subida.
+function cargarevemtos() {
 
+    const imgSubmit = document.querySelectorAll(".img-submit");
+    imgSubmit.forEach(element => {
+
+    // -- Cargar imagen (Toma del formulario de card y lo trata en el archivo cargar-imagen.PHP)
+    element.addEventListener(
+        "click",
+        (event) => {
+            console.log(document.forms.namedItem(`form-${element.getAttribute("value")}`));
+            const formSubData = new FormData(document.forms.namedItem(`form-${element.getAttribute("value")}`));
+
+            const request = new XMLHttpRequest();
+
+            // Función al regresar del request.
+            request.onload = (progress) => {
+
+                console.log(`REQUEST (subida): ${request.status} - ${request.statusText}.`);
+                // let response;
+                // try {
+                //     response = JSON.parse(request.response);
+                //     console.log(response);
+                // } catch (error) {
+                //     console.log("ERROR: " + error + " - " + request.response);
+                //     display.innerHTML = "ERROR: " + error + " - " + request.response;
+                // }
+                console.log(request.response)
+            };
+
+            request.open("POST", "system/cargar-imagen.php", true);
+            request.send(formSubData);
+            },
+            false,
+            );
+
+        });
+
+}
+
+// Eliminación de las cards (activado por el botón de basura)
 function trash(id){
     document.getElementById(id).remove();
 }
