@@ -58,31 +58,34 @@
                 <img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid mb-3">
             </div>
             <div class="col-12 col-md-8 fs-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus exercitationem fugit, voluptates voluptatem modi sed vel unde tempora nihil libero quae assumenda atque culpa officiis cum. Nesciunt rerum voluptas animi. Quod, cumque consequuntur laudantium ab quidem dolore numquam repudiandae labore quis nesciunt maiores iusto quam eaque modi hic error!
+                <p>La EESTN 2, en su momento llamada ENET N°1, surge primeramente de la conformación de dos escuelas:
+                    <ul>
+                        <li>la Escuela de Apredizaje Industrial, que funcionaba en las calles Alem y Maipú;</li>
+                        <li>la Escuela Técnica de Oficios de la Nación, ubicada en el antiguo edificio de Las Heras y 9 de Julio.</li>
+                    </ul>
+                </p>
+                <p>
+                    La denominación que tenía en aquel momento, Escuela Nacional Técnica N°1 "Ing. Felipe Senillosa", era en honor a un luchador que siendo extranjero, dejó su vida en nuestra patria trabajando en varios ámbitos de Técnica con proyectos, comisiones, y trabajos personales en distintos lugares, siendo uno de ellos el Fuerte Independencia (Tandil).
+                </p>
             </div>
         </div>
-<hr>
+
         <div class="row mt-3 mb-3 row-history">
             <div class="col-12 col-md-8 fs-4 mb-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus exercitationem fugit, voluptates voluptatem modi sed vel unde tempora nihil libero quae assumenda atque culpa officiis cum. Nesciunt rerum voluptas animi. Quod, cumque consequuntur laudantium ab quidem dolore numquam repudiandae labore quis nesciunt maiores iusto quam eaque modi hic error!
+                <p>En 1994, se impplementó la Ley Federal N°24.195/92 y debido a esto la escuela pasa a la jurisdicción provincial y recibe la denominación de Escuela de Educación Técnica N°2 "Ing. Felipe Senillosa".</p>
+                <p>Pasó de tener los tres años del Plan de Estudios de Polimodal en el Turno Diurno y se unificó el 7mo de la Escuela Primaria con el primer y segundo año del Ciclo Básico. En el año 2005 se instituyó un bloque técnico de seis años de duración incorporando el Tercer Ciclo, con el nombre de Escuela de Enseñanza Básica.</p>
             </div>
             <div class="col-12 col-md-4">
-                <img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid">
+                <img src="./imagenes/TalleresIglu.jpg" alt="" class="img-fluid">
             </div>
         </div>
 
-
-        <div class="row mt-5">
-            <div class="col-md-3 col-6">
-                <div class="row gap-5">
-                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
-                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
-                   <div class="col-12"><img src="./imagenes/escuelavieja.jpg" alt="" class="img-fluid w-75"></div> 
-                </div>
-            </div>
-            <div class="col-md-6 col-6 fs-3">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam laudantium praesentium exercitationem corporis id maxime placeat autem, hic fugit modi incidunt! Quos dolorum blanditiis ipsa quidem. Praesentium, optio. Dolorum rerum reprehenderit ad, sunt distinctio, quibusdam a molestias, minus fugit necessitatibus corporis aliquid nam officia? Alias quia earum architecto velit.
-            </div>
+        <div class="row">
+            <div class="fs-5">
+            <p class="fs-5"> En la actualidad se han ido aplicando diferentes leyes como la Ley de Educación Nacional 26.206, la Ley de Educación Provincial N°13.688 y la Ley de Educación Técnico Profesional N°26.058, las cuales han permitido transformar la escuela permitiéndole recuperar su identidad como formadora de Técnicos.</p>
+            <p>La escuela cuenta con una estructura curricular de 7 años, en donde el último año de formación específica esta orientado a las Prácticas Profesionalizantes y a familiarizar a los alumnos con el entorno socio productivo local. Además, posee con una amplia oferta educativa que involucra distintas orientaciones: Técnico en Electromecánica, Técnico en Automotores, Técnico en Química, Técnico en Maestro Mayor de Obras, Técnico en Informática y Técnico en Programación en turno diurno, y Técnico en Electromecánica, Técnico en Electrónica y Técnico en Maestro Mayor de Obras en turno nocturno.</p>
+            <p class="fs-5">La institucion cuenta con una planta permanente de 604 Docentes, y una matrícula aproximada de 1600 alumnos. Nos caracterizamos por ser una Institución abierta y en constante nexo con nuestra comunidad y con el ámbito socio productivo local, lo que convierte a la educación técnica en una oferta educativa única como herramienta de inclusión social.</p>
+    
         </div>
     </main>
 

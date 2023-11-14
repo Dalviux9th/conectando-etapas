@@ -57,11 +57,7 @@
 
         <section class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5 pt-5 text-center w-75 m-auto border-top border-1" id="intro">
             <h1 class="p-3 fs-2 fw-bold">EEST N°2 "Ing. Felipe Senillosa</h1>
-            <p class="p-3 fs-4">
-            La EEST Nº2, en su momento llamada ENET Nº1, surge primeramente de la conformación de dos escuelas:
-            la Escuela de Aprendizaje Industrial, que funcionaba en las calles Alem y Maipú, y
-            la Escuela Técnica de Oficios de la Nación ubicada en el antiguo edificio de Las Heras y 9 de Julio.
-            </p>
+            <p class="p-3 fs-4">La EESTN 2 "Ing. Felipe Senillosa", es una escuela de educación técnico-profesional con más de 75 años de trayectoria. Contamos con más de 2000 alumnos en busca de una educación que les permita introducirse de forma íntegra al mercado laboral en una amplia gama de especialidades.</p>
             <a href="./historyFront.php" class="btn btn-primary btn-lg btn-block">Más informacion</a>
         </section>
 

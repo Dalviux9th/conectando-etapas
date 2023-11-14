@@ -129,7 +129,7 @@
                 <a href="#">
                 <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront.php#Programacion">Programación</a>
+                    <a href="./specFront?orientacion=programacion">Programación</a>
                 </div>
                 </a>
                 </div>
@@ -137,7 +137,7 @@
                 <a href="#">
                 <img src="../www/imagenes/electro2.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront.php#Electromecanica">Electromecánica</a>
+                    <a href="./specFront?orientacion=electromecanica">Electromecánica</a>
                 </div>
                 </a>
                 </div>
@@ -145,7 +145,7 @@
                 <a href="#">
                 <img src="../www/imagenes/quimica2.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront.php#Quimica">Química</a>
+                    <a href="./specFront?orientacion=quimica">Química</a>
                 </div>
                 </a>
                 </div>
@@ -153,7 +153,7 @@
                 <a href="#">
                 <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront.php#Informatica">Informática</a>
+                    <a href="./specFront?orientacion=informatica">Informática</a>
                 </div>
                 </a>
                 </div>
@@ -161,7 +161,7 @@
                 <a href="#">
                 <img src="../www/imagenes/maestro.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront.php#MMO">Maestro Mayor de Obras</a>
+                    <a href="./specFront?orientacion=mmo">Maestro Mayor de Obras</a>
                 </div>
                 </a>
                 </div>
@@ -169,7 +169,7 @@
                 <a href="#">
                 <img src="../www/imagenes/automotores.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront.php#Automotor">Automotor</a>
+                    <a href="./specFront?orientacion=automotor">Automotor</a>
                 </div>
                 </a>
                 </div>
