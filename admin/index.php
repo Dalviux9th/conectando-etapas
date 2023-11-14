@@ -162,7 +162,7 @@ include "includes/head_settings.php"
 
                                 </div>
 
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <div class="tab-pane fade tabla" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                                     <?php
                                         $resAnect = mysqli_query($link, "SELECT `id_anec`, `titulo`, `autor`, `fecha` FROM `anecdota` WHERE 1");
                                     ?> 
@@ -181,11 +181,11 @@ include "includes/head_settings.php"
                                                 <th scope="col">Eliminar</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="padreAnecdotas">
                                             <?php
                                                 while($datosAnec = mysqli_fetch_assoc($resAnect)){
                                             ?>
-                                            <tr>
+                                            <tr id="anecdota-fila-<?php echo $datosAnec['id_anec'];?>">
                                                 <th scope="row"><?php echo $datosAnec["id_anec"]; ?></th>
                                                 <td><?php echo $datosAnec["titulo"]; ?></td>
                                                 <td><?php echo $datosAnec["autor"]; ?></td>
@@ -249,7 +249,7 @@ include "includes/head_settings.php"
 
                                     </div>
 
-                                    <div class="tab-pane fade" id="v-pills-proyectoEliminar" role="tabpanel" aria-labelledby="v-pills-proyectoEliminar-tab" tabindex="1">
+                                    <div class="tab-pane fade tabla" id="v-pills-proyectoEliminar" role="tabpanel" aria-labelledby="v-pills-proyectoEliminar-tab" tabindex="1">
                                         <table class="table table-striped" id="proyectoMuestra">
                                             <thead>
                                                 <tr>
@@ -259,12 +259,12 @@ include "includes/head_settings.php"
                                                     <th scope="col">Eliminar</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="padreProyectos">
                                                 <?php
                                                     $resAnect = mysqli_query($link, "SELECT `id_proyecto`, `id_orientacion`, `titulo` FROM `proyecto` WHERE 1");
                                                     while($datosAnec = mysqli_fetch_assoc($resAnect)){
                                                 ?>
-                                                <tr>
+                                                <tr id="proyecto-fila-<?php echo $datosAnec['id_proyecto'];?>">
                                                     <th scope="row"><?php echo $datosAnec["id_proyecto"]; ?></th>
                                                     <td><?php echo $datosAnec["id_orientacion"]; ?></td>
                                                     <td><?php echo $datosAnec["titulo"]; ?></td>
@@ -311,7 +311,7 @@ include "includes/head_settings.php"
 
                                     </div>
 
-                                    <div class="tab-pane fade" id="v-pills-OrinetacionEliminar" role="tabpanel" aria-labelledby="v-pills-OrinetacionEliminar-tab" tabindex="1">
+                                    <div class="tab-pane fade tabla" id="v-pills-OrinetacionEliminar" role="tabpanel" aria-labelledby="v-pills-OrinetacionEliminar-tab" tabindex="1">
                                         <table class="table table-striped" id="orientacionMuestra">
                                             <thead>
                                                 <tr>
@@ -320,12 +320,12 @@ include "includes/head_settings.php"
                                                     <th scope="col">imagen</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="padreOrientacion">
                                                 <?php
                                                     $resAnect = mysqli_query($link, "SELECT `id_orientacion`, `orientacion`,`imagen` FROM `orientacion` WHERE 1");
                                                     while($datosAnec = mysqli_fetch_assoc($resAnect)){
                                                 ?>
-                                                <tr>
+                                                <tr id="orientacion-fila-<?php echo $datosAnec['id_orientacion'];?>">
                                                     <th scope="row"><?php echo $datosAnec["id_orientacion"]; ?></th>
                                                     <td><?php echo $datosAnec["orientacion"]; ?></td>
                                                     <td><?php echo $datosAnec["imagen"]; ?></td>
