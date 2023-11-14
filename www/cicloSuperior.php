@@ -117,7 +117,7 @@
         </div>
 
         <div>
-            <h1><strong>Especializaciones</strong></h1>
+            <h1 id="Especializaciones"><strong>Especializaciones</strong></h1>
             <p class="fs-5">Aquí podrá entrar en detalle acerca de las diferentes especializaciones que ofrece nuestra institución.</p>
         </div>
 
@@ -129,7 +129,7 @@
                 <a href="#">
                 <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="#">Programación</a>
+                    <a href="./specFront.php#Programacion">Programación</a>
                 </div>
                 </a>
                 </div>
@@ -137,7 +137,7 @@
                 <a href="#">
                 <img src="../www/imagenes/electro2.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="#">Electromecánica</a>
+                    <a href="./specFront.php#Electromecanica">Electromecánica</a>
                 </div>
                 </a>
                 </div>
@@ -145,7 +145,7 @@
                 <a href="#">
                 <img src="../www/imagenes/quimica2.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="#">Química</a>
+                    <a href="./specFront.php#Quimica">Química</a>
                 </div>
                 </a>
                 </div>
@@ -153,7 +153,7 @@
                 <a href="#">
                 <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="#">Informática</a>
+                    <a href="./specFront.php#Informatica">Informática</a>
                 </div>
                 </a>
                 </div>
@@ -161,7 +161,7 @@
                 <a href="#">
                 <img src="../www/imagenes/maestro.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="#">Maestro Mayor de Obras</a>
+                    <a href="./specFront.php#MMO">Maestro Mayor de Obras</a>
                 </div>
                 </a>
                 </div>
@@ -169,7 +169,7 @@
                 <a href="#">
                 <img src="../www/imagenes/automotores.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="#">Automotor</a>
+                    <a href="./specFront.php#Automotor">Automotor</a>
                 </div>
                 </a>
                 </div>
