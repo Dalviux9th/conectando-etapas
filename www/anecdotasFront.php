@@ -134,7 +134,7 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
                 <?php echo $datos['titulo'] ?>
               </h3>
               <div class='text-start'>
-                <md><?php echo $datos['contenido'] ?></md>
+                <?php echo $datos['contenido'] ?>
               </div>
               <div class='text-end'>
                 Autor: <?php echo $datos['autor'] ?>
