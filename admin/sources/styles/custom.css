@@ -51,3 +51,8 @@ body {
 .trashBtn:hover {
     fill: var(--bs-danger) !important;
 }
+
+.tabla{
+    max-height: 70vh;
+    overflow-y: auto;
+}

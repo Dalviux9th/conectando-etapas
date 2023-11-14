@@ -128,9 +128,243 @@ include "includes/head_settings.php"
         </div>
     </div>
 
-</main>
+
+    <div id="gestion-de-sitio" class="col-10 col-lg-8">     
+        <div class="row" id="gestion-sitio">
+            <div class="col-12 fs-1">
+                Gestion de Sitios
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Anecdotas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Proyectos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Especilizaciones</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content border border-top-0" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Agregar</button>
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Eliminar</button>
+                            </div>
+                            <div class="tab-content col px-5 py-3" id="v-pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+
+                                    <div class="mb-3">
+                                        <label for="anecportada" class="form-label">Portada</label>
+                                        <input type="text" class="form-control" id="anecportada">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="anecautor" class="form-label">Autor</label>
+                                        <input type="text" class="form-control" id="anecautor">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="anecfecha" class="form-label" >Fecha</label>
+                                        <input type="date" class="form-control" id="anecfecha">
+                                    </div>
+                                    <div id="infoAnec" style="height: 250px"></div>
+                                    <button class="btn btn-primary mt-3 subir" id="subirAnec">subir</button>
+
+                                </div>
+
+                                <div class="tab-pane fade tabla" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                    <?php
+                                        $resAnect = mysqli_query($link, "SELECT `id_anec`, `titulo`, `autor`, `fecha` FROM `anecdota` WHERE 1");
+                                    ?> 
+
+                                    
+
+
+
+                                    <table class="table table-striped" id="anecdotasMuestra">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">IDAnecdota</th>
+                                                <th scope="col">Titulo</th>
+                                                <th scope="col">Autor</th>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col">Eliminar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="padreAnecdotas">
+                                            <?php
+                                                while($datosAnec = mysqli_fetch_assoc($resAnect)){
+                                            ?>
+                                            <tr id="anecdota-fila-<?php echo $datosAnec['id_anec'];?>">
+                                                <th scope="row"><?php echo $datosAnec["id_anec"]; ?></th>
+                                                <td><?php echo $datosAnec["titulo"]; ?></td>
+                                                <td><?php echo $datosAnec["autor"]; ?></td>
+                                                <td><?php echo $datosAnec["fecha"]; ?></td>
+                                                <td><button id ="<?php echo $datosAnec["id_anec"]; ?>" type="button" class="btn btn-danger delete">Eliminar</button></td>
+                                            </tr>
+                                            <?php
+                                                        }
+                                            ?>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="1">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                    <button class="nav-link show active" id="v-pills-proyectoAgregar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-proyectoAgregar" type="button" role="tab" aria-controls="v-pills-proyectoAgregar" aria-selected="true">Agregar</button>
+                                    <button class="nav-link" id="v-pills-proyectoEliminar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-proyectoEliminar" type="button" role="tab" aria-controls="v-pills-proyectoEliminar" aria-selected="false">Eliminar</button>
+
+                                </div>
+
+                                <div class="tab-content col px-5 py-3" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade show active" id="v-pills-proyectoAgregar" role="tabpanel" aria-labelledby="v-pills-proyectoAgregar-tab" tabindex="1">
+
+                                        <div class="mb-3">
+
+                                            <select class="form-select" aria-label="Default select example" id="proyectoOrinentacion">
+                                                <option selected>Elija una orientacion</option>
+                                                <?php
+                                                    $resOrinetacionSelect = mysqli_query($link, "SELECT `id_orientacion`, `orientacion` FROM `orientacion` WHERE 1");
+                                                    while($datosOrinetacionSelect = mysqli_fetch_assoc($resOrinetacionSelect)){
+                                                ?>
+                                                        <option value="<?php echo $datosOrinetacionSelect['id_orientacion']?>"><?php echo $datosOrinetacionSelect['orientacion']?></option>
+                                                <?php
+                                                }
+                                                ?>
+                                            </select>
+                                        </div>
+
+                                        <div id="infoProyectos" style="height: 250px"></div>
+
+                                        <div class="mb-3">
+                                            <label for="proyectoTitulo" class="form-label">Titulo</label>
+                                            <input type="text" class="form-control" id="proyectoTitulo">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="proyectoResumen" class="form-label">Resumen</label>
+                                            <input type="text" class="form-control" id="proyectoResumen">
+                                        </div>
+
+                                        <button class="btn btn-primary mt-3 subir" id="subirProyecto">subir</button>
+
+                                    </div>
+
+                                    <div class="tab-pane fade tabla" id="v-pills-proyectoEliminar" role="tabpanel" aria-labelledby="v-pills-proyectoEliminar-tab" tabindex="1">
+                                        <table class="table table-striped" id="proyectoMuestra">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">IDProyecto</th>
+                                                    <th scope="col">IDOrientación</th>
+                                                    <th scope="col">Titulo</th>
+                                                    <th scope="col">Eliminar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="padreProyectos">
+                                                <?php
+                                                    $resAnect = mysqli_query($link, "SELECT `id_proyecto`, `id_orientacion`, `titulo` FROM `proyecto` WHERE 1");
+                                                    while($datosAnec = mysqli_fetch_assoc($resAnect)){
+                                                ?>
+                                                <tr id="proyecto-fila-<?php echo $datosAnec['id_proyecto'];?>">
+                                                    <th scope="row"><?php echo $datosAnec["id_proyecto"]; ?></th>
+                                                    <td><?php echo $datosAnec["id_orientacion"]; ?></td>
+                                                    <td><?php echo $datosAnec["titulo"]; ?></td>
+                                                    <td><button id ="<?php echo $datosAnec["id_proyecto"]; ?>" type="button" class="btn btn-danger delete">Eliminar</button></td>
+                                                </tr>
+                                                <?php
+                                                            }
+                                                ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="1">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                                    <button class="nav-link show active" id="v-pills-OrinetacionAgregar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-OrinetacionAgregar" type="button" role="tab" aria-controls="v-pills-OrinetacionAgregar" aria-selected="true">Agregar</button>
+                                    <button class="nav-link" id="v-pills-OrinetacionEliminar-tab" data-bs-toggle="pill" data-bs-target="#v-pills-OrinetacionEliminar" type="button" role="tab" aria-controls="v-pills-OrinetacionEliminar" aria-selected="false">Eliminar</button>
+
+                                </div>
+
+                                <div class="tab-content col px-5 py-3" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade show active" id="v-pills-OrinetacionAgregar" role="tabpanel" aria-labelledby="v-pills-OrinetacionAgregar-tab" tabindex="1">   
+
+                                        <div id="infoOrientacion" style="height: 250px"></div>
+
+                                        <div class="mb-3">
+                                            <label for="orientacion" class="form-label">Orientación</label>
+                                            <input type="text" class="form-control" id="Orinetacion">
+                                        </div>
+
+                                        <button class="btn btn-primary mt-3 subir" id="subirOrientacion">subir</button>
+
+                                    </div>
+
+                                    <div class="tab-pane fade tabla" id="v-pills-OrinetacionEliminar" role="tabpanel" aria-labelledby="v-pills-OrinetacionEliminar-tab" tabindex="1">
+                                        <table class="table table-striped" id="orientacionMuestra">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">IDorientación</th>
+                                                    <th scope="col">orinetación</th>
+                                                    <th scope="col">imagen</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="padreOrientacion">
+                                                <?php
+                                                    $resAnect = mysqli_query($link, "SELECT `id_orientacion`, `orientacion`,`imagen` FROM `orientacion` WHERE 1");
+                                                    while($datosAnec = mysqli_fetch_assoc($resAnect)){
+                                                ?>
+                                                <tr id="orientacion-fila-<?php echo $datosAnec['id_orientacion'];?>">
+                                                    <th scope="row"><?php echo $datosAnec["id_orientacion"]; ?></th>
+                                                    <td><?php echo $datosAnec["orientacion"]; ?></td>
+                                                    <td><?php echo $datosAnec["imagen"]; ?></td>
+                                                    <td><button id ="<?php echo $datosAnec["id_orientacion"]; ?>" type="button" class="btn btn-danger delete">Eliminar</button></td>
+                                                </tr>
+                                                <?php
+                                                            }
+                                                ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
 
 <?php
-
 include "includes/footer.php";
 ?>
