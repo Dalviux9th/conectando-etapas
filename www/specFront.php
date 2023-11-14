@@ -1,3 +1,11 @@
+<?php
+include_once 'includes/db_con.php';
+// $id = $_GET["orientacion"];
+$id = "programacion";
+$res = mysqli_query($link, "SELECT * FROM `orientacion` WHERE orientacion = '$id' ");
+$datos = mysqli_fetch_assoc($res);
+?>
+
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="<?php if ($dark_mode) echo 'dark'; else echo 'light'; ?>">
 <head>
@@ -13,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     
     <script src="https://kit.fontawesome.com/e7401517de.js" crossorigin="anonymous"></script>
-    <title>[Especialización] - EEST N°2 "Ing. Felipe Senillosa"</title>
+    <title> - EEST N°2 "Ing. Felipe Senillosa"</title>
 
 </head>
 
@@ -57,44 +65,79 @@
     
 
     <main class="container-fluid">
+        <div class="row">
+            <div class="col-10">
+
+            </div>
+        </div>
         <div class="image-container">
-            <img src="./imagenes/informatica3Cortado.jpg" alt="" class="img-fluid img-spec ">
-            <h1 class="text-center text-white overlay-text">[Especialización]</h1>
+            <img src="./imagenes/imagenes/<?php
+
+                switch ($datos["orientacion"]) {
+                    case 'programacion':
+                        echo "programacion2.png";
+                        break;
+                    case 'mmo':
+                        echo "arquitectura1.png";
+                        break;
+                    case 'automotor':
+                        echo "automotor4.png";
+                        break;
+                    case 'quimica':
+                        echo "quimica2.png";
+                        break;                   
+                    case 'electromecanica':
+                        echo "electro1.png";
+                        break;
+                    case 'value':
+                        echo "programacion2";
+                        break;
+                }
+
+            ?>" alt="" class="img-fluid img-spec ">
+            <h1 class="text-center text-white overlay-text"> <?php 
+            switch ($datos["orientacion"]) {
+                case 'mmo':
+                    echo "Maestro mayor de obra";
+                    break;
+                case 'quimica':
+                    echo "Química";
+                        break;
+                case 'programacion':
+                    echo "Programación";
+                    break;
+                case 'informatica':
+                    echo "Informática";
+                break;
+                case 'automotores':
+                    echo "Automotores";
+                    break;
+                case 'electromecanica':
+                    echo "Electromecánica";
+                break;
+
+
+            }
+            
+            ?> </h1>
 
         </div>
-        <section>
-        <div class="row his-cont mt-5 mb-3">
-            <div class="col-12 col-md-8">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-12 ">
+        <section class=" d-flex justify-content-center">
+        <div class="row his-cont mt-5 mb-3 d-flex justify-content-center">
+            <div class="col-12 col-md-8 ">
                 <h1 class="text-center">Explicación</h1>
-                <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque laboriosam nostrum soluta? Odit, dolore repudiandae accusamus dolor molestias sit cumque fuga nisi in perferendis dignissimos. Aspernatur id temporibus aut corporis molestias quas corrupti esse, quod excepturi ullam. Quaerat eaque earum beatae labore nihil quos enim reiciendis rerum facere, iusto deserunt sint nostrum expedita cupiditate natus hic aspernatur maiores numquam?</p>
-            </div>
-            <div class="col-12 col-md-3 offset-1">
-                <h1 class="text-center">Proyectos</h1>
-                <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia harum quisquam porro cumque repellendus laudantium odio ab aliquid sequi impedit possimus sed quia perspiciatis temporibus dolore, maiores saepe, laboriosam culpa?</p>
+                <?php echo $datos["Contenido"];?>
             </div>
         </div>
         </section>
 
+    </div>
+</div>
 
         <!--"Rincón de egresados" dependiendo de la especialización contando como les fue-->
 
-        <div class="row justify-content-center text-center">
-            <div class="row">
-                <!--Imágenes de nuestros egresados -->
-                <div class="col-4">
-                    <img src="./sources/images/logo_trans.png" alt="" class="img-rinEgre rounded-5">
-                </div>
-                <div class="col-4">
-                    <img src="./sources/images/logo_trans.png" alt="" class="img-rinEgre rounded-5">
-                </div>
-                <div class="col-4">
-                    <img src="./sources/images/logo_trans.png" alt="" class="img-rinEgre rounded-5">
-                </div>
-            </div>
-            <div class="col-4"><em class="fw-medium">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, quia tempore quas fugit nisi odit debitis consequuntur doloribus aut cum."</em></div>
-            <div class="col-4"><em class="fw-medium">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, quia tempore quas fugit nisi odit debitis consequuntur doloribus aut cum."</em></div>
-            <div class="col-4"><em class="fw-medium">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, quia tempore quas fugit nisi odit debitis consequuntur doloribus aut cum."</em></div>
-        </div>
 
     </main>
 
