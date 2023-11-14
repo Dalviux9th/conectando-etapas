@@ -96,7 +96,7 @@ var editorOrientacion = new Quill('#infoOrientacion    ', {
         document.getElementById('subirOrientacion').addEventListener('click',()=>{
 
             let orientacion = document.getElementById('Orinetacion');
-            let contenido = editorProyecto.root;
+            let contenido = editorOrientacion.root;
             let info =["orientacion", 0, orientacion.value, contenido.innerHTML]
             ajax(info)
             orientacion.value = ""
