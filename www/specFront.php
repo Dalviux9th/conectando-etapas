@@ -15,6 +15,7 @@ $datos = mysqli_fetch_assoc($res);
     
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/www/sources/main_config.css">
+    <link rel="stylesheet" href="http://localhost/www/sources/especializacion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css" />

@@ -10,15 +10,16 @@ include "includes/head_settings.php"
 <main class="row justify-content-center py-3">
 
     <div class="col-10 col-lg-8 p-0"><!-- Encolumnado central del contenido -->
-        <h3>Consultas de los usuarios</h3>
-        <hr class="mt-1 mb-3">
         <div class="row">
+            <h3>Consultas de los usuarios</h3>
+            <hr class="mb-3">
 
             <div class="col-12 border rounded-3 overflow-hidden m-0">
 
+                <!-- Placeholder para el contenedor (aparece cuando no hay consultas activas) -->
                 <?php if (mysqli_num_rows($consultas) <= 0) { ?>
 
-                    <div class="emptyPslaceholder"><!-- Placeholder para el contenedor -->
+                    <div class="emptyPslaceholder">
                         <div class="row justify-content-around">
                             <img class="col-6 col-sm-4 h-100" src="./sources/images/no-results_Placeholder.png" alt="404. No encontrado">
                             <div class="col-12 text-center">
@@ -32,7 +33,8 @@ include "includes/head_settings.php"
 
                     <div class="row">
 
-                        <div class="col-12 tab-content" id="tabConsultas"><!--  -->
+                        <!-- Contenedor de consultas (cargado dinámicamente dde la BD) -->
+                        <div class="col-12 tab-content" id="tabConsultas">
                             <?php $first = true; foreach ($consultas as $datos) { ?>
 
                                 <div class="tab-pane fade<?php if ($first) echo ' show active'; $first = false; ?>" id="consulta-<?php echo $datos['id_cons']; ?>" role="tabpanel" tabindex="0">
@@ -53,14 +55,16 @@ include "includes/head_settings.php"
 
                                     <div class="row px-3 py-4">
 
-                                        <div class="col-12 col-md-6"><!-- Conslta del usuario -->
+                                        <!-- Consulta del usuario -->
+                                        <div class="col-12 col-md-6">
                                             <div class="form-text mb-2"><b><?php echo $datos['Nombre']; ?></b> preguntó...</div>
                                             <div class="consultaCont"><?php echo $datos['contenido']; ?></div>
                                         </div>
 
                                         <hr class="d-md-none col mx-4 my-3">
 
-                                        <div class="col-12 col-md-6"><!-- Input de respuesta -->
+                                        <!-- Input de respuesta -->
+                                        <div class="col-12 col-md-6">
                                             <form class="text-end" action="https://capeleti.000webhostapp.com/subir/Responder_consulta.php" method="post">
                                                 <input type="hidden" name="id" value="<?php echo $datos['id_cons']; ?>">
                                                 <input type="hidden" name="Contenido" value="<?php echo $datos['contenido']; ?>">
@@ -69,7 +73,14 @@ include "includes/head_settings.php"
 
                                                 <div class="col-12 text-start mb-3">
                                                     <label for="" class="form-label form-text">Inserte la respuesta:</label>
-                                                    <textarea class="form-control" rows="3" name="resConsulta" placeholder="Ej. Buendía, nos comunicamos desde Técnica 2..." title="Escriba una respuesta para enviarle a <?php echo $datos['Nombre']; ?>"></textarea>
+                                                    <textarea
+                                                        class="form-control"
+                                                        rows="3"
+                                                        name="resConsulta"
+                                                        placeholder="Ej. Buendía, nos comunicamos desde Técnica 2..."
+                                                        title="Escriba una respuesta para enviarle a <?php echo $datos['Nombre']; ?>"
+                                                        required
+                                                    ></textarea>
                                                 </div>
                                                 <button type="submit" class="btn btn-primary" name="Enviar">Enviar respuesta</button>
                                             </form>
@@ -79,7 +90,8 @@ include "includes/head_settings.php"
                             <?php } ?>
                         </div>
 
-                        <div class="consultaList col-12 border-top overflow-y-scroll" role="tablist"><!-- Lista de consultas -->
+                        <!-- Lista de consultas disponibles (cargadas dinámicamente dde la BD) -->
+                        <div class="consultaList col-12 border-top overflow-y-scroll" role="tablist">
                             <div class="col-12 sticky-top bg-light m-0 border-bottom">
                                 Todas las consultas:
                             </div>
@@ -114,7 +126,7 @@ include "includes/head_settings.php"
                 <?php } ?>
             </div>
         </div>
-    </div><!-- Contenedor de consultas (fin) -->
+    </div>
 
 
     <div id="gestion-de-sitio" class="col-10 col-lg-8">     
