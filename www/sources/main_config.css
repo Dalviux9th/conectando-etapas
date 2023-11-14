@@ -28,6 +28,8 @@ body {
     color: #000 !important;
 }
 
+
+
 p, .card-body{
     color: #1B036D !important;
 }
@@ -79,9 +81,6 @@ h5,
 
   }
 
-  .cardSup{
-    width: 40vw !important;
-  }
 
 
 header, nav{
@@ -101,7 +100,10 @@ header, nav{
     footer p {
         display: none;
     }
+
+
 }
+
 
 footer p {
     color: white;
@@ -114,6 +116,8 @@ footer p {
 
         
   }
+
+  
 
   .img-header{
     height: 30px;
@@ -160,6 +164,22 @@ width: 100vw;
 
 }
 
+.font-left, .font-right{
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .font-left{
+        text-align: left;
+    }
+    .font-right{
+        text-align: right;
+    }
+}
+
+#card{
+    display: none;
+}
 #img-modal{
     max-width: 100%;
     height: auto;
@@ -168,6 +188,38 @@ width: 100vw;
 }
 
 
+
+.owlSup{
+.item{
+    opacity:0.4;
+    transition:.4s ease all;
+    margin:0 20px;
+    transform:scale(.8);
+  }
+  @media(max-width:1000px){
+    .item{margin:0; transform:scale(.9)}
+  }
+  .active .item{
+    opacity:1;
+    transform:scale(1);
+  } 
+  
+  .owl-item {
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  }
+  
+  .inner{position:absolute; bottom:30px; left:0; right:0; text-align:center;}
+  .inner a{color:#fff; text-decoration:none; border-bottom:2px solid rgba(255,255,255,0.5); transition:.3s ease border-color}
+  .inner a:hover{border-color:#fff;}
+  .black .inner a{color:#000; border-color:rgba(0,0,0,0.4)}
+  .black .inner a:hover{border-color:#000;}
+  
+  .owl-carousel:after{content:""; display:block; position:absolute; width:8%; top:0; bottom:0; left:50%; margin-left:-4%; pointer-events: none; background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/aett_logo_slider.png) no-repeat center 50%; background-size:100% auto;
+  }
+  
+  .owl-controls{position:absolute; margin-top:300px;}
+}
 
 .cat-label{
     background-color: var(--bs-secondary);
