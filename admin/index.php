@@ -116,6 +116,7 @@ include "includes/head_settings.php"
         </div>
     </div><!-- Contenedor de consultas (fin) -->
 
+
     <div id="gestion-de-sitio" class="col-10 col-lg-8">     
         <div class="row" id="gestion-sitio">
             <div class="col-12 fs-1">

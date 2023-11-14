@@ -4,13 +4,13 @@
     $title_name = "Carga de Imagenes";
     include "includes/head_settings.php";
 ?>
-<span class="d-none">
+    <span class="d-none">
 
-    <form action="" method="post" enctype="multipart/form-data" name="fileUpload">
-        <input  class="d-none" type="file" name="fotos[]" id="fotos" multiple required>
-    </form>
+        <form action="" method="post" enctype="multipart/form-data" name="fileUpload">
+            <input  class="d-none" type="file" name="fotos[]" id="fotos" multiple required>
+        </form>
 
-</span>
+    </span>
 
     <!-- Modal. Muestra la ayuda (tutorial) -->
     <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
