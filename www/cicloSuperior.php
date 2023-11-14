@@ -52,6 +52,9 @@
     </header>
 
 <main class="container">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            
     
         <h1 class="text-center mt-5"><strong>Ciclo Superior</strong></h1>
         <p class=" fs-5">El ciclo superior tiene una duracion de cuatro años y posee la modalidad de Educación Técnico Profesional en donde se definen las tecnicaturas que se mostraran mas abajo.</p>
@@ -61,7 +64,7 @@
         <hr>
         <div class="row font-left mt-5">
             <div class="col-12 col-md-4">
-                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0">
+                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0 w-100">
             </div>
             <div class="col-12 col-md-8">
                 <h3>Cuarto Año</h3>
@@ -85,13 +88,13 @@
                 <p class="fs-5">Junto con estas, también apreciamos Análisis Matemático, como materia de formación científico-tecnológica, con una carga horaria de 144 horas.</p>
             </div>
             <div class="col-12 col-md-4">
-                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0">
+                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0 w-100">
             </div>
         </div>
         <hr>
         <div class="row font-left">
             <div class="col-12 col-md-4">
-                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0">
+                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0 w-100">
             </div>
             <div class="col-12 col-md-8">
                 <h3>Sexto Año</h3>
@@ -109,64 +112,71 @@
                 <p class="fs-5">La única materia curricular que vemos son las Prácticas Profesionalizantes, las cuales deben cumplir un total de 200 horas <strong>anuales</strong>.</p>
             </div>
             <div class="col-12 col-md-4">
-                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0">
+                <img src="../www/imagenes/electro.jpg" alt="" class="img-fluid m-0 p-0 w-100">
             </div>
         </div>
 
         <div>
             <h1><strong>Especializaciones</strong></h1>
-            <p>Aquí podrá entrar en detalle acerca de las diferentes especializaciones que ofrece nuestra institución.</p>
+            <p class="fs-5">Aquí podrá entrar en detalle acerca de las diferentes especializaciones que ofrece nuestra institución.</p>
         </div>
 
 
-<div class="owl-carousel owlSup row">
-    <div class="item">
-      <a href="#">
-      <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
-      <div class="inner">
-        <a href="#">Programación</a>
-      </div>
-      </a>
-    </div>
-    <div class="item">
-      <a href="#">
-      <img src="../www/imagenes/electro2.jpg" alt="" class="imgSpecsSup rounded-3"/>
-      <div class="inner">
-        <a href="#">Electromecánica</a>
-      </div>
-      </a>
-    </div>
-    <div class="item">
-      <a href="#">
-      <img src="../www/imagenes/quimica2.jpg" alt="" class="imgSpecsSup rounded-3"/>
-      <div class="inner">
-        <a href="#">Química</a>
-      </div>
-      </a>
-    </div>
-    <div class="item">
-      <a href="#">
-      <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
-      <div class="inner">
-        <a href="#">Informática</a>
-      </div>
-      </a>
-    </div>
-    <div class="item">
-      <a href="#">
-      <img src="../www/imagenes/maestro.jpg" alt="" class="imgSpecsSup rounded-3"/>
-      <div class="inner">
-        <a href="#">Maestro Mayor de Obras</a>
-      </div>
-      </a>
-    </div>
-    <div class="item">
-      <a href="#">
-      <img src="../www/imagenes/automotores.jpg" alt="" class="imgSpecsSup rounded-3"/>
-      <div class="inner">
-        <a href="#">Automotor</a>
-      </div>
-      </a>
+    
+
+            <div class="owl-carousel owlSup">
+                <div class="item">
+                <a href="#">
+                <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
+                <div class="inner">
+                    <a href="#">Programación</a>
+                </div>
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                <img src="../www/imagenes/electro2.jpg" alt="" class="imgSpecsSup rounded-3"/>
+                <div class="inner">
+                    <a href="#">Electromecánica</a>
+                </div>
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                <img src="../www/imagenes/quimica2.jpg" alt="" class="imgSpecsSup rounded-3"/>
+                <div class="inner">
+                    <a href="#">Química</a>
+                </div>
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
+                <div class="inner">
+                    <a href="#">Informática</a>
+                </div>
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                <img src="../www/imagenes/maestro.jpg" alt="" class="imgSpecsSup rounded-3"/>
+                <div class="inner">
+                    <a href="#">Maestro Mayor de Obras</a>
+                </div>
+                </a>
+                </div>
+                <div class="item">
+                <a href="#">
+                <img src="../www/imagenes/automotores.jpg" alt="" class="imgSpecsSup rounded-3"/>
+                <div class="inner">
+                    <a href="#">Automotor</a>
+                </div>
+                </a>
+                </div>
+            </div>
+
+
+
     </div>
 </div>
 
@@ -214,26 +224,27 @@
         $('.owl-carousel').owlCarousel({
     stagePadding: 200,
     loop:true,
-    margin:10,
+    margin: 20,
     nav:false,
-    items:1,
+    center:true,
+    items: 1,
     lazyLoad: true,
     nav:true,
-  responsive:{
-        0:{
-            items:1,
-            stagePadding: 60
-        },
-        600:{
-            items:1,
-            stagePadding: 100
-        },
-        1000:{
-            items:1,
-            stagePadding: 200
-        }
-  }
-)
+    responsive:{
+            0:{
+                items:1,
+                stagePadding: 20
+            },
+            600:{
+                items:1,
+                stagePadding: 20
+            },
+            1000:{
+                items:1,
+                stagePadding: 200
+            }
+    }
+})
     </script>
 
 </body>
