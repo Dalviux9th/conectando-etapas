@@ -1,7 +1,6 @@
 <?php
 include_once 'includes/db_con.php';
-// $id = $_GET["orientacion"];
-$id = "programacion";
+$id = $_GET["orientacion"];
 $res = mysqli_query($link, "SELECT * FROM `orientacion` WHERE orientacion = '$id' ");
 $datos = mysqli_fetch_assoc($res);
 ?>
@@ -15,6 +14,7 @@ $datos = mysqli_fetch_assoc($res);
     
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/www/sources/main_config.css">
+    <link rel="stylesheet" href="http://localhost/www/sources/especializacion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="http://localhost/www/sources/css/bootstrap.min.css" />
@@ -79,7 +79,7 @@ $datos = mysqli_fetch_assoc($res);
                     case 'mmo':
                         echo "arquitectura1.png";
                         break;
-                    case 'automotor':
+                    case 'automotores':
                         echo "automotor4.png";
                         break;
                     case 'quimica':
@@ -88,8 +88,8 @@ $datos = mysqli_fetch_assoc($res);
                     case 'electromecanica':
                         echo "electro1.png";
                         break;
-                    case 'value':
-                        echo "programacion2";
+                    case 'informatica':
+                        echo "informatica1.png";
                         break;
                 }
 
@@ -126,7 +126,7 @@ $datos = mysqli_fetch_assoc($res);
         <section class=" d-flex justify-content-center">
         <div class="row his-cont mt-5 mb-3 d-flex justify-content-center">
             <div class="col-12 col-md-8 ">
-                <h1 class="text-center">Explicación</h1>
+                <h1 class="text-center mb-3">¿De que se trata la tecnicatura?</h1>
                 <?php echo $datos["Contenido"];?>
             </div>
         </div>
