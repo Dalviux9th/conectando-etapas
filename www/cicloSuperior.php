@@ -126,50 +126,50 @@
 
             <div class="owl-carousel owlSup">
                 <div class="item">
-                <a href="#">
+                <a href="./specFront.php?orientacion=programacion">
                 <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront?orientacion=programacion">Programación</a>
+                    <a href="./specFront.php?orientacion=programacion">Programación</a>
                 </div>
                 </a>
                 </div>
                 <div class="item">
-                <a href="#">
+                <a href="./specFront.php?orientacion=electromecanica">
                 <img src="../www/imagenes/electro2.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront?orientacion=electromecanica">Electromecánica</a>
+                    <a href="./specFront.php?orientacion=electromecanica">Electromecánica</a>
                 </div>
                 </a>
                 </div>
                 <div class="item">
-                <a href="#">
+                <a href="./specFront.php?orientacion=quimica">
                 <img src="../www/imagenes/quimica2.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront?orientacion=quimica">Química</a>
+                    <a href="./specFront.php?orientacion=quimica">Química</a>
                 </div>
                 </a>
                 </div>
                 <div class="item">
-                <a href="#">
+                <a href="./specFront.php?orientacion=informatica">
                 <img src="../www/imagenes/informatica3.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront?orientacion=informatica">Informática</a>
+                    <a href="./specFront.php?orientacion=informatica">Informática</a>
                 </div>
                 </a>
                 </div>
                 <div class="item">
-                <a href="#">
+                <a href="./specFront.php?orientacion=mmo">
                 <img src="../www/imagenes/maestro.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront?orientacion=mmo">Maestro Mayor de Obras</a>
+                    <a href="./specFront.php?orientacion=mmo">Maestro Mayor de Obras</a>
                 </div>
                 </a>
                 </div>
                 <div class="item">
-                <a href="#">
+                <a href="./specFront.php?orientacion=automotor">
                 <img src="../www/imagenes/automotores.jpg" alt="" class="imgSpecsSup rounded-3"/>
                 <div class="inner">
-                    <a href="./specFront?orientacion=automotor">Automotor</a>
+                    <a href="./specFront.php?orientacion=automotor">Automotor</a>
                 </div>
                 </a>
                 </div>

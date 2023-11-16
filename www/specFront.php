@@ -1,7 +1,6 @@
 <?php
 include_once 'includes/db_con.php';
-// $id = $_GET["orientacion"];
-$id = "programacion";
+$id = $_GET["orientacion"];
 $res = mysqli_query($link, "SELECT * FROM `orientacion` WHERE orientacion = '$id' ");
 $datos = mysqli_fetch_assoc($res);
 ?>
@@ -80,7 +79,7 @@ $datos = mysqli_fetch_assoc($res);
                     case 'mmo':
                         echo "arquitectura1.png";
                         break;
-                    case 'automotor':
+                    case 'automotores':
                         echo "automotor4.png";
                         break;
                     case 'quimica':
@@ -89,8 +88,8 @@ $datos = mysqli_fetch_assoc($res);
                     case 'electromecanica':
                         echo "electro1.png";
                         break;
-                    case 'value':
-                        echo "programacion2";
+                    case 'informatica':
+                        echo "informatica1.png";
                         break;
                 }
 
@@ -127,7 +126,7 @@ $datos = mysqli_fetch_assoc($res);
         <section class=" d-flex justify-content-center">
         <div class="row his-cont mt-5 mb-3 d-flex justify-content-center">
             <div class="col-12 col-md-8 ">
-                <h1 class="text-center">Explicación</h1>
+                <h1 class="text-center mb-3">¿De que se trata la tecnicatura?</h1>
                 <?php echo $datos["Contenido"];?>
             </div>
         </div>

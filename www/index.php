@@ -67,16 +67,16 @@
             <div class="row w-75 mx-auto mt-5 my-5 preview">
                 <div class="row mt-5 d-flex">
                     <div class="col-md-12 col-xs-12 col-lg-5">
-                        <img src="http://localhost/www/imagenes/escuelavieja.jpg" alt="Prueba" width="100%" height="auto"></div>
+                        <img class= "mt-1" src="http://localhost/www/imagenes/escuelavieja.jpg" alt="Prueba" width="100%" height="auto"></div>
                     <div class="col-md-12 col-lg-7 d-flex">
-                        <p class="fs-4 p-3">
+                        <p class="fs-4 px-3">
                         La denominación que tenia en aquel momento, Escuela Nacional de Educación Técnica N°1 “Ing. Felipe Senillosa”, era en honor a un luchador que siendo extranjero, dejó su vida en nuestra patria trabajando en varios ámbitos de Técnica con proyectos, comisiones y trabajos personales en distintos lugares, siendo uno de ellos el Fuerte Independencia (Tandil).
                     </p>
                     </div>
                 </div>
                 <div class="row mt-5 d-flex">
                     <div class="col-md-12 col-lg-7 d-flex">
-                        <p class="fs-4 p-3">
+                        <p class="fs-4 px-3">
                         En 1994, se implemento la Ley Federal Nº 24.195/92 y debido a esto la escuela pasa a la jurisdicción provincial y recibe la denominación de Escuela de Educación Técnica Nº2 “Ing Felipe Senillosa”. Paso a tener los tres años del Plan de Estudios de Polimodal en el Turno Diurno y se unifico el 7mo. de la Escuela Primaria con el primer y segundo año del Ciclo Básico.<br>En el año 2005 se instituyó un bloque técnico de seis años de duración incorporando el Tercer Ciclo, con el nombre de Escuela de Enseñanza Básica.
                     </p>
                     </div>
