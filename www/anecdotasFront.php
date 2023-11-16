@@ -56,8 +56,7 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="./docsFront.php">Documentos</a></li>
-                                <li><a class="dropdown-item" href="./FAQ.php">FAQ</a></li>
-                                <!---  <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li> -->
+                                <li><a class="dropdown-item" href="./FAQ.php">Preguntas Frecuentes</a></li>                                <!---  <li><a class="dropdown-item" href="./conEtFront.php">Conectando Etapas</a></li> -->
                             </ul>
                         </li>
                     </ul>
@@ -67,14 +66,14 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
     </header>
 
   <main class="container-fluid text-center mt-4">
-    <h1 class="col-12" >Anécdotas</h1>
+    <h1 class="col-12">Anécdotas</h1>
 
   <div class="gtco-testimonials" style="width: 100vw;">
     <div class="owl-carousel owl-carousel1 owl-theme">
       
       <div>
       <div class="card mx-3">
-        <div class="card-body">
+        <div class="card-body" id="anecDiv">
           <a href="#anecdota-10">
             <h5>Macanas: Nuestras (mejores) travesuras</h5>
           </a>
@@ -84,7 +83,7 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
     </div>
     <div>
         <div class="card mx-3">
-          <div class="card-body">
+          <div class="card-body" id="anecDiv">
           <a href="#anecdota-9">
               <h5>Mi historia en Técnica</h5>
             </a>
@@ -94,21 +93,21 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
       </div>
       <div>
         <div class="card mx-3">
-          <div class="card-body">
+          <div class="card-body" id="anecDiv">
             <a href="#anecdota-8">
               <h5>Técnica en la década del '70</h5>
             </a>
-            <p class="card-text">"Mi nombre es Guillermo Raúl García fui alumno y docente"</p>
+            <p class="card-text">"Mi nombre es Guillermo Raúl García, fui alumno y docente"</p>
           </div>
         </div>
       </div>
       <div>
         <div class="card mx-3">
-          <div class="card-body">
+          <div class="card-body" id="anecDiv">
           <a href="#anecdota-7">
             <h5>Sorpresa en el pasillo</h5>
           </a>
-            <p class="card-text">"Ahí nos salvamos por muy poco" - Willy García</p>
+            <p class="card-text">"Ahí nos salvamos por muy poco"</p>
           </div>
         </div>
       </div>
@@ -128,8 +127,8 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
             
             $clave = json_decode($datos['reacciones'], true);
         ?>
-          <div class='row justify-content-center mt-5' id="anecdota-<?php echo $datos['id_anec'] ?>">
-            <div class='col-12 col-sm-10 col-md-8 bg-dark-subtle p-3'>
+          <div class='row justify-content-center mt-5 ' id="anecdota-<?php echo $datos['id_anec'] ?>">
+            <div class='col-12 col-sm-10 col-md-8 bg-dark-subtle p-3 anecCont'>
               <h3 class='text-center'>
                 <?php echo $datos['titulo'] ?>
               </h3>
@@ -244,11 +243,11 @@ $anec_fetch = mysqli_query($link, "SELECT * FROM anecdota");
           nav: false,
           responsive: {
             0: {
-              items: 1.5,
+              items: 1,
               nav: false
             },
-            1000: {
-              items: 2,
+            768: {
+              items: 3.5,
               nav: false
             }
           }
